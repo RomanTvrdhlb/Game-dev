@@ -10,14 +10,14 @@
   }
 }
 
-@include font-face("Georgia", "Georgia-Regular", 400, normal);
-@include font-face("Georgia", "Georgia-italic", 400, italic);
-@include font-face("Georgia", "Georgia-Bold", 700, normal);
+@include font-face("Aqum-two", "aqum-two-small-caps", 400, normal);
 
-@include font-face("Georgia-Script", "Georgia-Script", 400, normal);
+@include font-face("Peace-Sans", "Peace-Sans", 400, normal);
 
-@include font-face("Source", "Roboto-Light", 300, normal);
-@include font-face("Source", "Roboto-Regular", 400, normal);
-@include font-face("Source", "Roboto-Medium", 500, normal);
-@include font-face("Source", "Roboto-Bold", 700, normal);
-@include font-face("Source", "Roboto-Black", 900, normal);
+@include font-face("Montserrat", "montserrat-regular", 400, normal);
+
+@include font-face("Airfool", "Airfool", 400, normal);
+
+@include font-face("Roboto", "Roboto-Light", 300, normal);
+@include font-face("Roboto", "Roboto-Regular", 400, normal);
+@include font-face("Roboto", "Roboto-Medium", 500, normal);

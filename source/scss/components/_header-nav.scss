@@ -1,0 +1,78 @@
+.header-nav {
+  display: grid;
+  align-items: center;
+  width: 100%;
+
+  grid-gap: clamp(10px, 1.84vw, 30px);
+  grid-template-columns: 178px 128px 1fr;
+
+  &__btn {
+    position: relative;
+
+    transition: all 0.4s;
+  }
+
+  &__amount {
+    position: absolute;
+    top: -21px;
+    right: -18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    font-family: var(--font-family);
+    color: var(--color-a);
+
+    background-color: var(--bg-d);
+    border-radius: 50%;
+  }
+
+  &__form {
+    position: relative;
+
+    width: 100%;
+    max-width: 353px;
+    padding: 10px 8px;
+
+    background: #c1efff;
+    border-radius: 15px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    justify-self: end;
+  }
+
+  &__input {
+    width: 100%;
+    min-height: 30px;
+
+    text-indent: 11.5px;
+
+    background: var(--bg-a);
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    &::placeholder {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      font-family: var(--font-family);
+      color: var(--color-b);
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+
+    transform: translateY(-50%);
+  }
+}
