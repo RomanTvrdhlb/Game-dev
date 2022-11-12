@@ -1,0 +1,45 @@
+.main-box {
+  &__inner {
+    display: grid;
+    max-width: 270px;
+
+    grid-gap: 8px 10px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__img {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 10px;
+    outline: solid 3px var(--color-p);
+
+    transition: all 0.4s;
+    &--blue {
+      outline: solid 3px var(--color-w);
+    }
+    &--pink {
+      outline: solid 3px var(--color-t);
+    }
+    &--orange {
+      outline: solid 3px var(--color-i);
+    }
+    &:hover {
+      outline: solid 3px var(--color-p);
+    }
+    image,
+    picture {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &--six-row {
+    padding-right: 16px;
+    .main-box__inner {
+      max-width: 410px;
+
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+}

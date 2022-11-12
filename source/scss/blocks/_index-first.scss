@@ -1,13 +1,10 @@
 
 .index-first {
-  padding-bottom: 29px;
+  &__inner {
+    display: grid;
 
-@include tablet {
-    padding-bottom: clamp(32px, 2.602vw, 37px);
-  }
-
-@include mobile {
-    padding-bottom: 36px;
+    grid-gap: clamp(20px, 2.699vw, 44px);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

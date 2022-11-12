@@ -12,6 +12,9 @@
     transition: all 0.4s;
   }
 
+  &__label {
+    width: 100%;
+  }
   &__amount {
     position: absolute;
     top: -21px;
@@ -52,6 +55,8 @@
     width: 100%;
     min-height: 30px;
 
+    font-family: var(--font-family);
+    color: var(--color-b);
     text-indent: 11.5px;
 
     background: var(--bg-a);

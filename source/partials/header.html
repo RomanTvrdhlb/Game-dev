@@ -2,12 +2,10 @@
   <div class="container">
     <div class="header">
       <a href="#" class="logo">
-        <div class="logo__pic"><picture>
+        <picture>
           <source type='image/webp' srcset='img/index/logo.webp'>
-          <img width='42' height='42' src='img/index/logo.png' alt='logo'>
+          <img width='261' height='43' src='img/index/logo.png' alt='logo'>
         </picture>
-      </div>
-      <span class="logo__name">IgroFun.com</span>
       </a>
 
       <nav class="header-nav">
@@ -18,7 +16,7 @@
           Любимые игры
           <span class="header-nav__amount">1</span>
         </button>
-        <button class="header-nav__btn orange-btn">
+        <button class="header-nav__btn yellow-btn">
           <svg width='20' height='17'>
             <use href='img/sprite/sprite.svg#time'></use>
           </svg>
@@ -27,14 +25,17 @@
         </button>
 
         <form class="header-nav__form">
-          <input class="header-nav__input" type="text" placeholder="Поиск игр...">
-          <div class="header-nav__icon">
+          <label for="" class="header-nav__label">
+            <input class="header-nav__input" type="text"
+              placeholder="Поиск игр...">
+          </label>
+          <button class="header-nav__icon" type="submit">
             <svg width='14' height='15'>
               <use href='img/sprite/sprite.svg#search'></use>
             </svg>
-          </div>
+          </button>
         </form>
       </nav>
     </div>
-</div>
+  </div>
 </header>
