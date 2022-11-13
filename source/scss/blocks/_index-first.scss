@@ -1,10 +1,14 @@
 
 .index-first {
+  padding-top: var(--header-height);
+  padding-bottom: 15px;
   &__inner {
     display: grid;
+    width: 100%;
 
     grid-gap: clamp(20px, 2.699vw, 44px);
     grid-template-columns: repeat(4, 1fr);
+    justify-items: end;
   }
 }
 

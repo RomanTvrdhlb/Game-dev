@@ -1,21 +1,9 @@
-footer {
-  &.black {
-    background-color: var(--bg-b);
-  }
-}
+
 
 .footer {
   position: relative;
 
   padding: 73px calc((1422px - 1280px) / 2) 20px;
-
-@include small-tablet {
-    padding: 73px 10px 20px;
-  }
-
-@include mobile {
-    padding: 86px 10px 27px ;
-  }
 }
 
 footer {

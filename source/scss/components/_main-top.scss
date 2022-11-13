@@ -20,6 +20,15 @@
       background-color: var(--color-i) !important;
     }
   }
+
+  &--yellow-line {
+    &::before {
+      background-color: var(--color-y) !important;
+    }
+  }
+
+
+
   &:before {
     content: "";
     position: absolute;

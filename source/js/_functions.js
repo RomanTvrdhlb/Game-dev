@@ -28,13 +28,13 @@ import { disableScroll } from './functions/disable-scroll';
 import { enableScroll } from './functions/enable-scroll';
 
 // Получение высоты шапки сайта (не забудьте вызвать функцию)
-// import { getHeaderHeight } from './functions/header-height';
-// window.addEventListener("DOMContentLoaded", () => {
-//   getHeaderHeight();
-// });
-// window.addEventListener("resize", () => {
-//   getHeaderHeight();
-// });
+import { getHeaderHeight } from './functions/header-height';
+window.addEventListener("DOMContentLoaded", () => {
+  getHeaderHeight();
+});
+window.addEventListener("resize", () => {
+  getHeaderHeight();
+});
 
 
 // Подключение плагина кастом-скролла

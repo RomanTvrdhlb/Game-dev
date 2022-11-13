@@ -1,11 +1,16 @@
 header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
   width: 100%;
-  padding: clamp(19px, 1.779vw, 29px) 0 clamp(16px, 1.718vw, 28px);
 }
 
 .header {
   display: flex;
   align-items: center;
+  padding: clamp(19px, 1.779vw, 29px) 0 clamp(16px, 1.718vw, 28px);
 
   grid-gap: clamp(20px, 2.883vw, 47px);
 }
