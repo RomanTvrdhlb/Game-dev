@@ -1,3 +1,12 @@
 .index-second {
-  padding-bottom: clamp(18px, 1.84vw, 30px);
+  padding-bottom: clamp(12px, 1.472vw, 24px);
+
+
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+
+    grid-gap: 12px;
+  }
 }

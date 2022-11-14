@@ -1,16 +1,19 @@
 import { addCustomClass,removeCustomClass } from "../functions/customFunctions";
+import vars from '../_vars';
 
  const lift = document.querySelector('[data-lift]');
- 
+console.log(document.documentElement.scrollTop)
  if (lift) {
   let timeOut;
+
+  let bodyHeight = document.documentElement.scrollTop;
   
   window.onscroll = function () {
     
     let scrolled = window.pageYOffset || document.documentElement.scrollTop;
 
   
-    if (scrolled > 500) {
+    if (scrolled > bodyHeight - 300) {
       addCustomClass(lift, "show");
     } else {
       removeCustomClass(lift, "show");
