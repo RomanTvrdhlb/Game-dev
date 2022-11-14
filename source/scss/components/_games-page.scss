@@ -1,0 +1,30 @@
+.games-page {
+  display: flex;
+  align-items: center;
+
+  grid-gap: clamp(6px, 0.552vw, 9px);
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: clamp(18px, 1.963vw, 32px);
+    min-height: clamp(18px, 1.963vw, 32px);
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(10px, 0.982vw, 16px);
+    line-height: 125%;
+    font-family: var(--font-family);
+    color: var(--color-b);
+
+    background-color: var(--bg-l);
+    border-radius: 5px;
+
+    &.active {
+      color: var(--color-a);
+
+      background-color: var(--bg-h);
+    }
+  }
+}

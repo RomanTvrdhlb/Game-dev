@@ -1,11 +1,11 @@
 
 
 .footer {
-  position: relative;
-
-  padding: 73px calc((1422px - 1280px) / 2) 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
 }
 
 footer {
-  position: relative;
+  background-color: var(--bg-i);
 }

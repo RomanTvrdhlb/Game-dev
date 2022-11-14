@@ -39,11 +39,11 @@ import Swiper from '../vendor/swiper';
 // }
 
 const smallSlider = new Swiper('.small-slider__container', {
-  slidesPerView: 6,
+  slidesPerView: 'auto',
   spaceBetween: 19.5,
   observer: true,
   observeParents: true,
-  loop: true,
+  freemode: true,
   navigation: {
     nextEl: '.small-slider__next',
   },
@@ -55,7 +55,7 @@ const mainSwiper = new Swiper('.main-slider__container', {
   spaceBetween: 8.5,
   observer: true,
   observeParents: true,
-  loop:true,
+  freemode: true,
 
   navigation: {
     nextEl: '.main-slider__next',

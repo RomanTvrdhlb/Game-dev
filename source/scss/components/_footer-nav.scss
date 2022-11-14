@@ -1,0 +1,32 @@
+.footer-nav {
+  display: flex;
+  align-items: center;
+
+  grid-gap: 15px;
+
+  &__link {
+    position: relative;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(13px, 0.92vw, 15px);
+    line-height: 120%;
+    font-family: var(--font-family1);
+    color: var(--color-a);
+
+    &:not(:first-child) {
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -7px;
+
+        width: 1.5px;
+        height: 80%;
+
+        background-color: var(--bg-a);
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

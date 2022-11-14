@@ -1,0 +1,15 @@
+.games-section {
+  padding-bottom: clamp(75px, 6.871vw, 112px);
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    padding: 22px 46px  31px;
+
+    background-color: var(--bg-o);
+    border-radius: 10px;
+    box-shadow: 7px 5px 4px rgba(0, 0, 0, 0.25);
+
+    grid-gap: clamp(13px, 1.227vw, 20px);
+  }
+}

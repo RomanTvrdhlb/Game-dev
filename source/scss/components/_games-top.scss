@@ -1,0 +1,60 @@
+.games-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 13px 16px 16px;
+
+  background-color: var(--bg-e);
+  border-radius: 10px;
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(16px, 1.472vw, 24px);
+    line-height: 125%;
+    font-family: var(--font-family);
+    color: var(--color-b);
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+
+    grid-gap: 7px;
+
+@include tablet {
+      border-radius: clamp(13px, 1.043vw, 17px);
+    }
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 79px;
+    max-height: 31px;
+    padding: 8px 23px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(12px, 0.859vw, 14px);
+    line-height: 130%;
+    font-family: var(--font-family);
+    color: var(--color-b);
+
+    background-color: var(--bg-p);
+    border-radius: 5px;
+
+    transition: all 0.4s;
+
+@include tablet {
+      border-radius: 10px;
+    }
+
+    &:hover {
+      background-color: var(--bg-h);
+    }
+
+    &.active {
+      background-color: var(--bg-h);
+    }
+  }
+}

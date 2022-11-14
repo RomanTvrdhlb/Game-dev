@@ -1,4 +1,4 @@
-import { removeClassInArray,addCustomClass } from "../functions/customFunctions";
+import { removeClassInArray, addCustomClass, addClassInArray } from "../functions/customFunctions";
 
 const tabParents = [...document.querySelectorAll('[data-tabs-parrent]')];
 tabParents.map((tabParent) => {
@@ -10,10 +10,21 @@ tabParents.map((tabParent) => {
       nav.addEventListener('click', (e) => {
         e.preventDefault();
         const activeTabAttr = e.target.getAttribute("data-tab");
-        removeClassInArray(tabNav, 'active');
-        removeClassInArray(tabContent, 'active');
-        addCustomClass(tabParent.querySelector(`[data-tab="${activeTabAttr}"]`),'active');
-        addCustomClass(tabParent.querySelector(`[data-tab-content="${activeTabAttr}"]`), 'active');
+       
+        if (activeTabAttr === 'All'){
+          addClassInArray([...tabParent.querySelectorAll('[data-tab-content]')], 'active');
+          removeClassInArray(tabNav, 'active');
+          addCustomClass(tabParent.querySelector("[data-tab='All']"), 'active')
+          
+        } else{    
+          removeClassInArray(tabNav, 'active');
+          removeClassInArray(tabContent, 'active');
+          addCustomClass(tabParent.querySelector(`[data-tab="${activeTabAttr}"]`),'active');
+          addClassInArray([...tabParent.querySelectorAll(`[data-tab-content="${activeTabAttr}"]`)], 'active');
+          console.log('123')
+        } 
+           removeClassInArray(tabNav, 'active');
+           addCustomClass(tabParent.querySelector(`[data-tab="${activeTabAttr}"]`), 'active');
       });
     });
   }
