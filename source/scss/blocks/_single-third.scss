@@ -1,0 +1,19 @@
+.single-third {
+  padding-bottom: clamp(82px, 7.423vw, 121px);
+  &__box {
+    display: flex;
+    flex-direction: column;
+
+    grid-gap: clamp(8px, 1.411vw, 23px);
+  }
+  &__title {
+    padding-bottom: 3px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(16px, 1.472vw, 24px);
+    line-height: 125%;
+    font-family: var(--font-family);
+    color: var(--color-b);
+  }
+}

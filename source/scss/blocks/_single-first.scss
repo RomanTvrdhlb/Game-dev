@@ -1,0 +1,21 @@
+.single-first {
+  padding-top: var(--header-height);
+  padding-bottom: clamp(12px, 1.227vw, 20px);
+  &__box {
+    display: flex;
+    flex-direction: column;
+
+    grid-gap: 14px;
+  }
+  &__inner {
+    display: grid;
+    padding: 15px;
+
+    background: var(--bg-a);
+    border: 5px solid var(--bg-e);
+    border-radius: 10px;
+
+    grid-gap: 7px;
+    grid-template-columns: 900px 1fr;
+  }
+}

@@ -1,0 +1,8 @@
+.single-info {
+  padding: 0;
+
+  background-color: transparent;
+  &__text {
+    font-size: clamp(10px, 0.736vw, 12px);
+  }
+}

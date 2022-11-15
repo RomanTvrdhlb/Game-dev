@@ -1,0 +1,39 @@
+.single-slider {
+  &__container {
+    overflow: hidden;
+
+    border-radius: 15px;
+  }
+  &__btn {
+    position: absolute;
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 63px;
+
+    background-color: var(--bg-r);
+  }
+
+  &__prev {
+    top: 5px;
+    bottom: 7px;
+    left: 0;
+
+    border-radius: 10px 0 0 10px;
+    svg {
+      transform: scaleX(-1);
+    }
+    &.swiper-button-disabled {
+      opacity: 0;
+    }
+  }
+  &__next {
+    top: 5px;
+    right: 0;
+    bottom: 7px;
+
+    border-radius: 0 10px 10px 0;
+  }
+}

@@ -1,0 +1,31 @@
+.single-second {
+  padding-bottom: clamp(32px, 2.27vw, 37px);
+  &__box {
+    display: flex;
+    flex-direction: column;
+
+    grid-gap: 23px;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(16px, 1.472vw, 24px);
+    line-height: 130%;
+    font-family: var(--font-family);
+    color: var(--color-b);
+
+    grid-gap: 8px;
+
+    svg {
+      fill: var(--bg-b);
+
+@include mobile {
+        width: 20px;
+        height: auto;
+      }
+    }
+  }
+}

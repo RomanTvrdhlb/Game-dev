@@ -65,6 +65,20 @@ const mainSwiper = new Swiper('.main-slider__container', {
  
 });
 
+const singleSwiper = new Swiper('.single-slider__container', {
+  slidesPerView: 'auto',
+  spaceBetween: 8.5,
+  observer: true,
+  observeParents: true,
+  freemode: true,
+
+  navigation: {
+    prevEl:'.single-slider__prev',
+    nextEl: '.single-slider__next',
+  },
+ 
+});
+
 // let test = document.querySelector('.about-swiper');
 
 // if (test) {

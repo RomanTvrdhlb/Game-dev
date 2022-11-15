@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+
+  @include('partials/header.html')
+
+  <main style="background-image:url(img/index/back.png);">
+
+    <section class="single-first">
+      <div class="container">
+        <div class="single-first__box">
+          <ul class="main-buttons">
+            <li class="main-buttons__item"><a href="categories.html" class="main-buttons__btn main-btn">Игры</a></li>
+            <li class="main-buttons__item"><a href="categories.html" class="main-buttons__btn main-btn main-btn--yellow">Новые
+                игры</a></li>
+            <li class="main-buttons__item"><a href="categories.html" class="main-buttons__btn main-btn main-btn--aqua">Игры для
+                мальчиков</a></li>
+            <li class="main-buttons__item"><a href="categories.html" class="main-buttons__btn main-btn main-btn--orange">Игры на
+                двоих</a></li>
+            <li class="main-buttons__item"><a href="categories.html" class="main-buttons__btn main-btn main-btn--pink">Игры для
+                девочек</a></li>
+            <li class="main-buttons__item"><a href="categories.html" class="main-buttons__btn main-btn main-btn--green">Популярные
+                игры</a></li>
+            <li class="main-buttons__item"><a href="categories.html" class="main-buttons__btn main-btn main-btn--red">Лучшие</a></li>
+            <li class="main-buttons__item"><a href="categories.html" class="main-buttons__btn main-btn main-btn--blue">Для детей</a>
+            </li>
+            <li class="main-buttons__item"><a href="categories.html" class="main-buttons__btn main-btn main-btn--violet">Все игры</a>
+            </li>
+          </ul>
+          <div class="single-first__inner">
+          <div class="single-info games-info">
+            <div class="games-info__img">
+              <picture>
+                <source type='image/webp' srcset='img/single/img1.webp'>
+                <img width='60' height='60' src='img/single/img1.png' alt='image'>
+              </picture>
+            </div>
+            <div class="games-info__about">
+              <div class="games-info__title">Игра Мои Сладкие Клубничные Наряды</div>
+              <p class="single-info__text games-info__text">Сегодня четыре подружки немного заскучали. Остудив планы на день, девушки пришли к выводу, что им нужно заняться чем-то необычным, к примеру, выбором красочных клубничных нарядов, которые очень актуальны этим летом. Девушки приглашают тебя помочь им подобрать превосходные луки в клубничном стиле. </p>
+            </div>
+          </div>
+          <div class="window-box">
+            <div class="window-box__info">
+              <buttton class="window-box__btn">
+                <svg width='20' height='17'>
+                  <use href='img/sprite/sprite.svg#heart'></use>
+                </svg>
+              </buttton>
+              <span class="window-box__like">В любимые</span>
+              <span class="window-box__add">3215 уже добавили</span>
+            </div>
+            <div class="window-box__full">
+              <button class="window-box__full-btn">
+                На весь экран
+                <svg width='17' height='17'>
+                  <use href='img/sprite/sprite.svg#full'></use>
+                </svg>
+              </button>
+             
+
+            </div>
+          </div>
+          <div class="games-rating">
+            <div class="games-rating__views">
+              <span class="games-rating__value">27578 рейтинги</span>
+              <span class="games-rating__star">
+                9.1
+                <svg width='15' height='15'>
+                  <use href='img/sprite/sprite.svg#Star'></use>
+                </svg>
+              </span>
+            </div>
+            <div class="games-rating__inner">
+              <span class="games-rating__icon games-rating__icon--mode">
+                <svg width='20' height='20'>
+                  <use href='img/sprite/sprite.svg#like2'></use>
+                </svg>
+                12
+              </span>
+              <span class="games-rating__icon">
+                <svg width='20' height='14'>
+                  <use href='img/sprite/sprite.svg#game'></use>
+                </svg>
+                22751
+              </span>
+              <span class="games-rating__icon">
+                <svg width='16.5' height='15'>
+                  <use href='img/sprite/sprite.svg#label'></use>
+                </svg>
+              </span>
+            </div>
+
+            <ul class="games-rating__list">
+              <li class="games-rating__item">
+                <a class="games-card">
+                  <div class="games-card__img">
+                    <picture>
+                      <source type='image/webp' srcset='img/single/game-card/img1.webp'>
+                      <img width='30' height='30' src='img/single/game-card/img1.png' alt='image'>
+                    </picture>
+                  </div>
+                  <span class="games-card__name">Для девочек</span>
+                </a>
+              </li>
+              <li class="games-rating__item">
+                <a class="games-card">
+                  <div class="games-card__img">
+                    <picture>
+                      <source type='image/webp' srcset='img/single/game-card/img2.webp'>
+                      <img width='30' height='30' src='img/single/game-card/img2.png' alt='image'>
+                    </picture>
+                  </div>
+                  <span class="games-card__name">Одевалки и макияж</span>
+                </a>
+              </li>
+              <li class="games-rating__item">
+                <a class="games-card">
+                  <div class="games-card__img">
+                    <picture>
+                      <source type='image/webp' srcset='img/single/game-card/img3.webp'>
+                      <img width='30' height='30' src='img/single/game-card/img3.png' alt='image'>
+                    </picture>
+                  </div>
+                  <span class="games-card__name">Одевалки</span>
+                </a>
+              </li>
+              <li class="games-rating__item">
+                <a class="games-card">
+                  <div class="games-card__img">
+                    <picture>
+                      <source type='image/webp' srcset='img/single/game-card/img4.webp'>
+                      <img width='30' height='30' src='img/single/game-card/img4.png' alt='image'>
+                    </picture>
+                  </div>
+                  <span class="games-card__name">Для девочек</span>
+                </a>
+              </li>
+              <li class="games-rating__item">
+                <a class="games-card">
+                  <div class="games-card__img">
+                    <picture>
+                      <source type='image/webp' srcset='img/single/game-card/img5.webp'>
+                      <img width='30' height='30' src='img/single/game-card/img5.png' alt='image'>
+                    </picture>
+                  </div>
+                  <span class="games-card__name">Для девочек 8 лет</span>
+                </a>
+              </li>
+          
+            </ul>
+          </div>
+
+          </div>
+          <div class="management-box">
+            <span class="management-box__title">Управление:</span>
+            <ul class="management-box__list">
+              <li class="management-box__item">
+                <div class="management-box__icon">
+                  <svg width='14' height='21'>
+                <use href='img/sprite/sprite.svg#mouse'></use>
+              </svg>
+            </div>  
+              <span class="management-box__name">Мышкой: ПКМ -выбрать/схватить</span>
+            </li>
+            <li class="management-box__item">
+              <div class="management-box__icon">
+                <svg width='32' height='21'>
+              <use href='img/sprite/sprite.svg#keys'></use>
+            </svg>
+          </div>  
+            <span class="management-box__name">Клавиши WASD: W -вперед/ A -влево/ S -назад/ D -вправо</span>
+          </li>
+          <li class="management-box__item">
+            <div class="management-box__icon">
+              <svg width='19' height='21'>
+            <use href='img/sprite/sprite.svg#esc'></use>
+          </svg>
+        </div>  
+          <span class="management-box__name">Клавиша ESC: Назад</span>
+        </li>
+        <li class="management-box__item">
+          <div class="management-box__icon">
+            <svg width='19' height='21'>
+          <use href='img/sprite/sprite.svg#mouse'></use>
+        </svg>
+      </div>  
+        <span class="management-box__name">Клавиша Enter: Старт/ сделать выбор/ пауза</span>
+      </li>
+            </ul>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="single-second">
+      <div class="container">
+      <div class="single-second__box">
+        <span class="single-second__title">
+          <svg width='31' height='22'>
+            <use href='img/sprite/sprite.svg#game'></use>
+          </svg>
+          Похожие игры
+        </span>
+        <div class='small-slider'>
+          
+          <div class='small-slider__container swiper-container'>
+            <ul class='small-slider__wrapper swiper-wrapper'>
+
+              <li class='small-slider__slide swiper-slide'>
+                <a href="#" class="small-slider__square">
+                  <div class="small-slider__img">
+                    <picture>
+                      <source type='image/webp' srcset='img/single/img2.webp'>
+                      <img width='212' height='114' src='img/single/img2.png' alt='image'>
+                    </picture>
+                  </div>
+                  <span class="small-slider__name">Макияж для девочек</span>
+                </a>
+              </li>
+              <li class='small-slider__slide swiper-slide'>
+                <a href="#" class="small-slider__square">
+                  <div class="small-slider__img">
+                    <picture>
+                      <source type='image/webp' srcset='img/single/img3.webp'>
+                      <img width='212' height='114' src='img/single/img3.png' alt='image'>
+                    </picture>
+                  </div>
+                  <span class="small-slider__name">Радужный слайм</span>
+                </a>
+              </li>
+              <li class='small-slider__slide swiper-slide'>
+                <a href="#" class="small-slider__square">
+                  <div class="small-slider__img">
+                    <picture>
+                      <source type='image/webp' srcset='img/single/img4.webp'>
+                      <img width='212' height='114' src='img/single/img4.png' alt='image'>
+                    </picture>
+                  </div>
+                  <span class="small-slider__name">Тик-Ток звезда</span>
+                </a>
+              </li>
+              <li class='small-slider__slide swiper-slide'>
+                <a href="#" class="small-slider__square">
+                  <div class="small-slider__img">
+                    <picture>
+                      <source type='image/webp' srcset='img/single/img5.webp'>
+                      <img width='212' height='114' src='img/single/img5.png' alt='image'>
+                    </picture>
+                  </div>
+                  <span class="small-slider__name">Путевка на круиз</span>
+                </a>
+              </li>
+              <li class='small-slider__slide swiper-slide'>
+                <a href="#" class="small-slider__square">
+                  <div class="small-slider__img">
+                    <picture>
+                      <source type='image/webp' srcset='img/single/img6.webp'>
+                      <img width='212' height='114' src='img/single/img6.png' alt='image'>
+                    </picture>
+                  </div>
+                  <span class="small-slider__name">Бургер Маня</span>
+                </a>
+              </li>
+              <li class='small-slider__slide swiper-slide'>
+                <a href="#" class="small-slider__square">
+                  <div class="small-slider__img">
+                    <picture>
+                      <source type='image/webp' srcset='img/single/img7.webp'>
+                      <img width='212' height='114' src='img/single/img7.png' alt='image'>
+                    </picture>
+                  </div>
+                  <span class="small-slider__name"> Зимняя эстэтика</span>
+                </a>
+              </li>
+              <li class='small-slider__slide swiper-slide'>
+                <a href="#" class="small-slider__square">
+                  <div class="small-slider__img">
+                    <picture>
+                      <source type='image/webp' srcset='img/single/img2.webp'>
+                      <img width='212' height='114' src='img/single/img2.png' alt='image'>
+                    </picture>
+                  </div>
+                  <span class="small-slider__name">Макияж для девочек</span>
+                </a>
+              </li>
+              <li class='small-slider__slide swiper-slide'>
+                <a href="#" class="small-slider__square">
+                  <div class="small-slider__img">
+                    <picture>
+                      <source type='image/webp' srcset='img/single/img3.webp'>
+                      <img width='212' height='114' src='img/single/img3.png' alt='image'>
+                    </picture>
+                  </div>
+                  <span class="small-slider__name">Радужный слайм</span>
+                </a>
+              </li>
+              <li class='small-slider__slide swiper-slide'>
+                <a href="#" class="small-slider__square">
+                  <div class="small-slider__img">
+                    <picture>
+                      <source type='image/webp' srcset='img/single/img4.webp'>
+                      <img width='212' height='114' src='img/single/img4.png' alt='image'>
+                    </picture>
+                  </div>
+                  <span class="small-slider__name">Тик-Ток звезда</span>
+                </a>
+              </li>
+              <li class='small-slider__slide swiper-slide'>
+                <a href="#" class="small-slider__square">
+                  <div class="small-slider__img">
+                    <picture>
+                      <source type='image/webp' srcset='img/single/img5.webp'>
+                      <img width='212' height='114' src='img/single/img5.png' alt='image'>
+                    </picture>
+                  </div>
+                  <span class="small-slider__name">Путевка на круиз</span>
+                </a>
+              </li>
+              <li class='small-slider__slide swiper-slide'>
+                <a href="#" class="small-slider__square">
+                  <div class="small-slider__img">
+                    <picture>
+                      <source type='image/webp' srcset='img/single/img6.webp'>
+                      <img width='212' height='114' src='img/single/img6.png' alt='image'>
+                    </picture>
+                  </div>
+                  <span class="small-slider__name">Бургер Маня</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+          <button class='small-slider__next small-slider__btn'>
+            <svg width='13' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-r'></use>
+            </svg>
+          </button>
+          <button class='small-slider__prev small-slider__btn'>
+            <svg width='13' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-r'></use>
+            </svg>
+          </button>
+        </div>
+        <div class="single-games similar-games">
+          <span class="single-games__title similar-games__title">
+            <svg width='26' height='18'>
+              <use href='img/sprite/sprite.svg#game'></use>
+            </svg>
+            Похожие категории игр</span>
+          <ul class="single-games__list similar-games__list">
+            <li class="similar-games__item">
+              <a class="similar-card similar-card--pink">
+                <div class="similar-card__img">
+                  <picture>
+                    <source type='image/webp' srcset='img/single/similar-card/img1.webp'>
+                    <img width='91' height='60' src='img/single/similar-card/img1.png' alt='image'>
+                  </picture>
+                </div>
+              </a>
+            </li>
+            <li class="similar-games__item">
+              <a class="similar-card similar-card--pink">
+                <div class="similar-card__img">
+                  <picture>
+                    <source type='image/webp' srcset='img/single/similar-card/img2.webp'>
+                    <img width='91' height='60' src='img/single/similar-card/img2.png' alt='image'>
+                  </picture>
+                </div>
+              </a>
+            </li>
+            <li class="similar-games__item">
+              <a class="similar-card similar-card--pink">
+                <div class="similar-card__img">
+                  <picture>
+                    <source type='image/webp' srcset='img/single/similar-card/img3.webp'>
+                    <img width='91' height='60' src='img/single/similar-card/img3.png' alt='image'>
+                  </picture>
+                </div>
+              </a>
+            </li>
+            <li class="similar-games__item">
+              <a class="similar-card similar-card--pink">
+                <div class="similar-card__img">
+                  <picture>
+                    <source type='image/webp' srcset='img/single/similar-card/img4.webp'>
+                    <img width='91' height='60' src='img/single/similar-card/img4.png' alt='image'>
+                  </picture>
+                </div>
+              </a>
+            </li>
+            <li class="similar-games__item">
+              <a class="similar-card similar-card--pink">
+                <div class="similar-card__img">
+                  <picture>
+                    <source type='image/webp' srcset='img/single/similar-card/img5.webp'>
+                    <img width='91' height='60' src='img/single/similar-card/img5.png' alt='image'>
+                  </picture>
+                </div>
+              </a>
+            </li>
+            <li class="similar-games__item">
+              <a class="similar-card similar-card--pink">
+                <div class="similar-card__img">
+                  <picture>
+                    <source type='image/webp' srcset='img/single/similar-card/img6.webp'>
+                    <img width='91' height='60' src='img/single/similar-card/img6.png' alt='image'>
+                  </picture>
+                </div>
+              </a>
+            </li>
+            <li class="similar-games__item">
+              <a class="similar-card similar-card--pink">
+                <div class="similar-card__img">
+                  <picture>
+                    <source type='image/webp' srcset='img/single/similar-card/img7.webp'>
+                    <img width='91' height='60' src='img/single/similar-card/img7.png' alt='image'>
+                  </picture>
+                </div>
+              </a>
+            </li>
+            <li class="similar-games__item">
+              <a class="similar-card similar-card--pink">
+                <div class="similar-card__img">
+                  <picture>
+                    <source type='image/webp' srcset='img/single/similar-card/img8.webp'>
+                    <img width='91' height='60' src='img/single/similar-card/img8.png' alt='image'>
+                  </picture>
+                </div>
+              </a>
+            </li>
+            <li class="similar-games__item">
+              <a class="similar-card similar-card--pink">
+                <div class="similar-card__img">
+                  <picture>
+                    <source type='image/webp' srcset='img/single/similar-card/img9.webp'>
+                    <img width='91' height='60' src='img/single/similar-card/img9.png' alt='image'>
+                  </picture>
+                </div>
+              </a>
+            </li>
+            <li class="similar-games__item">
+              <a class="similar-card similar-card--pink">
+                <div class="similar-card__img">
+                  <picture>
+                    <source type='image/webp' srcset='img/single/similar-card/img10.webp'>
+                    <img width='91' height='60' src='img/single/similar-card/img10.png' alt='image'>
+                  </picture>
+                </div>
+              </a>
+            </li>
+            <li class="similar-games__item">
+              <a class="similar-card similar-card--pink">
+                <div class="similar-card__img">
+                  <picture>
+                    <source type='image/webp' srcset='img/single/similar-card/img11.webp'>
+                    <img width='91' height='60' src='img/single/similar-card/img11.png' alt='image'>
+                  </picture>
+                </div>
+              </a>
+            </li>
+            <li class="similar-games__item">
+              <a class="similar-card similar-card--pink">
+                <div class="similar-card__img">
+                  <picture>
+                    <source type='image/webp' srcset='img/single/similar-card/img12.webp'>
+                    <img width='91' height='60' src='img/single/similar-card/img12.png' alt='image'>
+                  </picture>
+                </div>
+              </a>
+            </li>
+            <li class="similar-games__item">
+              <a class="similar-card similar-card--pink">
+                <div class="similar-card__img">
+                  <picture>
+                    <source type='image/webp' srcset='img/single/similar-card/img13.webp'>
+                    <img width='91' height='60' src='img/single/similar-card/img13.png' alt='image'>
+                  </picture>
+                </div>
+              </a>
+            </li>
+            <li class="similar-games__item">
+              <a class="similar-card similar-card--pink">
+                <div class="similar-card__img">
+                  <picture>
+                    <source type='image/webp' srcset='img/single/similar-card/img14.webp'>
+                    <img width='91' height='60' src='img/single/similar-card/img14.png' alt='image'>
+                  </picture>
+                </div>
+              </a>
+            </li>
+            <li class="similar-games__item">
+              <a class="similar-card similar-card--pink">
+                <div class="similar-card__img">
+                  <picture>
+                    <source type='image/webp' srcset='img/single/similar-card/img15.webp'>
+                    <img width='91' height='60' src='img/single/similar-card/img15.png' alt='image'>
+                  </picture>
+                </div>
+              </a>
+            </li>
+            <li class="similar-games__item">
+              <a class="similar-card similar-card--pink">
+                <div class="similar-card__img">
+                  <picture>
+                    <source type='image/webp' srcset='img/single/similar-card/img16.webp'>
+                    <img width='91' height='60' src='img/single/similar-card/img16.png' alt='image'>
+                  </picture>
+                </div>
+              </a>
+            </li>
+            <li class="similar-games__item">
+              <a class="similar-card similar-card--pink">
+                <div class="similar-card__img">
+                  <picture>
+                    <source type='image/webp' srcset='img/single/similar-card/img17.webp'>
+                    <img width='91' height='60' src='img/single/similar-card/img17.png' alt='image'>
+                  </picture>
+                </div>
+              </a>
+            </li>
+            <li class="similar-games__item">
+              <a class="similar-card similar-card--pink">
+                <div class="similar-card__img">
+                  <picture>
+                    <source type='image/webp' srcset='img/single/similar-card/img18.webp'>
+                    <img width='91' height='60' src='img/single/similar-card/img18.png' alt='image'>
+                  </picture>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <div class="games-bottom">
+            <button class="games-bottom__more">
+              <svg width='18' height='16'>
+                <use href='img/sprite/sprite.svg#more'></use>
+              </svg>
+              Больше игр...
+            </button>
+          </div>
+          </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="single-third">
+      <div class="container">
+      <div class="single-third__box">
+        <span class="single-third__title">Так же советуем поиграть:</span>
+    <div class='main-slider'>
+      <div class='main-slider__container swiper-container'>
+        <ul class='main-slider__wrapper swiper-wrapper'>
+          <li class='main-slider__slide--big main-slider__slide swiper-slide'>
+            <a href="single.html" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/index/slider/img1.webp'>
+                  <img width='272' height='272' src='img/index/slider/img1.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--big main-slider__name">Разерная пушка 3</span>
+            </a>
+
+          </li>
+          <li class='main-slider__slide swiper-slide'>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/index/slider/img2.webp'>
+                  <img width='136' height='136' src='img/index/slider/img2.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--small main-slider__name">Разерная пушка 3</span>
+            </a>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/index/slider/img3.webp'>
+                  <img width='136' height='136' src='img/index/slider/img3.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--small main-slider__name">Резать фрукты мечом</span>
+            </a>
+          </li>
+          <li class='main-slider__slide--medium main-slider__slide swiper-slide'>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/index/slider/img4.webp'>
+                  <img width='136' height='136' src='img/index/slider/img4.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--medium main-slider__name">Папа Луи: Пицерия</span>
+            </a>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/index/slider/img5.webp'>
+                  <img width='136' height='136' src='img/index/slider/img5.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--medium main-slider__name">Грабитель Боб 3</span>
+            </a>
+          </li>
+          <li class='main-slider__slide--small main-slider__slide swiper-slide'>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/index/slider/img6.webp'>
+                  <img width='136' height='136' src='img/index/slider/img6.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--small main-slider__name">Последние из Выж... </span>
+            </a>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/index/slider/img7.webp'>
+                  <img width='136' height='136' src='img/index/slider/img7.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--small main-slider__name">Стикмен против Кр...</span>
+            </a>
+          </li>
+          <li class='main-slider__slide--small main-slider__slide swiper-slide'>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/index/slider/img8.webp'>
+                  <img width='136' height='136' src='img/index/slider/img8.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--small main-slider__name">Бумажный майнкр...</span>
+            </a>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/index/slider/img9.webp'>
+                  <img width='136' height='136' src='img/index/slider/img9.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--small main-slider__name">Орион песочница:У...</span>
+            </a>
+          </li>
+          <li class='main-slider__slide--big main-slider__slide swiper-slide'>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/index/slider/img10.webp'>
+                  <img width='272' height='272' src='img/index/slider/img10.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--big main-slider__name">Папа Луи 2:Атака га...</span>
+            </a>
+
+          </li>
+          <li class='main-slider__slide--standart main-slider__slide swiper-slide'>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/index/slider/img11.webp'>
+                  <img width='136' height='136' src='img/index/slider/img11.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name">Дрифт на БМВ 3д</span>
+            </a>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/index/slider/img12.webp'>
+                  <img width='136' height='136' src='img/index/slider/img12.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name">Стрелять и прятаться</span>
+            </a>
+          </li>
+          <li class='main-slider__slide swiper-slide'>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/index/slider/img2.webp'>
+                  <img width='136' height='136' src='img/index/slider/img2.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--small main-slider__name">Разерная пушка 3</span>
+            </a>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/index/slider/img3.webp'>
+                  <img width='136' height='136' src='img/index/slider/img3.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--small main-slider__name">Резать фрукты мечом</span>
+            </a>
+          </li>
+          <li class='main-slider__slide--medium main-slider__slide swiper-slide'>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/index/slider/img4.webp'>
+                  <img width='136' height='136' src='img/index/slider/img4.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--medium main-slider__name">Папа Луи: Пицерия</span>
+            </a>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/index/slider/img5.webp'>
+                  <img width='136' height='136' src='img/index/slider/img5.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--medium main-slider__name">Грабитель Боб 3</span>
+            </a>
+          </li>
+          <li class='main-slider__slide--small main-slider__slide swiper-slide'>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/index/slider/img6.webp'>
+                  <img width='136' height='136' src='img/index/slider/img6.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--small main-slider__name">Последние из Выж... </span>
+            </a>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/index/slider/img7.webp'>
+                  <img width='136' height='136' src='img/index/slider/img7.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--small main-slider__name">Стикмен против Кр...</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button class='main-slider__prev main-slider__btn'>
+        <svg width='28' height='48'>
+          <use href='img/sprite/sprite.svg#arrow-r'></use>
+        </svg>
+      </button>
+      <button class='main-slider__next main-slider__btn'>
+        <svg width='28' height='48'>
+          <use href='img/sprite/sprite.svg#arrow-r'></use>
+        </svg>
+      </button>
+    </div>
+    <div class='single-slider main-slider'>
+      <div class='single-slider__container swiper-container'>
+        <ul class='main-slider__wrapper swiper-wrapper'>
+         
+          <li class='main-slider__slide swiper-slide'>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/single/slider/img1.webp'>
+                  <img width='136' height='136' src='img/single/slider/img1.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--small main-slider__name">Разерная пушка 3</span>
+            </a>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/single/slider/img2.webp'>
+                  <img width='136' height='136' src='img/single/slider/img2.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--small main-slider__name">Резать фрукты мечом</span>
+            </a>
+          </li>
+          <li class='main-slider__slide--medium main-slider__slide swiper-slide'>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/single/slider/img3.webp'>
+                  <img width='136' height='136' src='img/single/slider/img3.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--medium main-slider__name">Папа Луи: Пицерия</span>
+            </a>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/single/slider/img4.webp'>
+                  <img width='136' height='136' src='img/single/slider/img4.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--medium main-slider__name">Грабитель Боб 3</span>
+            </a>
+          </li>
+          <li class='main-slider__slide--big main-slider__slide swiper-slide'>
+            <a href="single.html" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/single/slider/img5.webp'>
+                  <img width='272' height='272' src='img/single/slider/img5.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--big main-slider__name">Разерная пушка 3</span>
+            </a>
+
+          </li>
+          <li class='main-slider__slide--small main-slider__slide swiper-slide'>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/single/slider/img6.webp'>
+                  <img width='136' height='136' src='img/single/slider/img6.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--small main-slider__name">Последние из Выж... </span>
+            </a>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/single/slider/img7.webp'>
+                  <img width='136' height='136' src='img/single/slider/img7.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--small main-slider__name">Стикмен против Кр...</span>
+            </a>
+          </li>
+          <li class='main-slider__slide--small main-slider__slide swiper-slide'>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/single/slider/img8.webp'>
+                  <img width='136' height='136' src='img/single/slider/img8.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--small main-slider__name">Бумажный майнкр...</span>
+            </a>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/single/slider/img9.webp'>
+                  <img width='136' height='136' src='img/single/slider/img9.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--small main-slider__name">Орион песочница:У...</span>
+            </a>
+          </li>
+          <li class='main-slider__slide--big main-slider__slide swiper-slide'>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/single/slider/img10.webp'>
+                  <img width='272' height='272' src='img/single/slider/img10.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--big main-slider__name">Папа Луи 2:Атака га...</span>
+            </a>
+
+          </li>
+          <li class='main-slider__slide--standart main-slider__slide swiper-slide'>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/single/slider/img11.webp'>
+                  <img width='136' height='136' src='img/single/slider/img11.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name">Дрифт на БМВ 3д</span>
+            </a>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/single/slider/img12.webp'>
+                  <img width='136' height='136' src='img/single/slider/img12.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name">Стрелять и прятаться</span>
+            </a>
+          </li>
+          <li class='main-slider__slide--small main-slider__slide swiper-slide'>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/single/slider/img8.webp'>
+                  <img width='136' height='136' src='img/single/slider/img8.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--small main-slider__name">Бумажный майнкр...</span>
+            </a>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/single/slider/img9.webp'>
+                  <img width='136' height='136' src='img/single/slider/img9.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--small main-slider__name">Орион песочница:У...</span>
+            </a>
+          </li>
+          <li class='main-slider__slide--big main-slider__slide swiper-slide'>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/single/slider/img10.webp'>
+                  <img width='272' height='272' src='img/single/slider/img10.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name--big main-slider__name">Папа Луи 2:Атака га...</span>
+            </a>
+
+          </li>
+          <li class='main-slider__slide--standart main-slider__slide swiper-slide'>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/single/slider/img11.webp'>
+                  <img width='136' height='136' src='img/single/slider/img11.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name">Дрифт на БМВ 3д</span>
+            </a>
+            <a href="#" class="main-slider__square">
+              <div class="main-slider__img">
+                <picture>
+                  <source type='image/webp' srcset='img/single/slider/img12.webp'>
+                  <img width='136' height='136' src='img/single/slider/img12.png' alt='image'>
+                </picture>
+              </div>
+              <span class="main-slider__name">Стрелять и прятаться</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button class='single-slider__prev single-slider__btn'>
+        <svg width='28' height='48'>
+          <use href='img/sprite/sprite.svg#arrow-r'></use>
+        </svg>
+      </button>
+      <button class='single-slider__next single-slider__btn'>
+        <svg width='28' height='48'>
+          <use href='img/sprite/sprite.svg#arrow-r'></use>
+        </svg>
+      </button>
+    </div>
+      </div>
+      </div>
+    </section>
+    
+
+  </main>
+
+  @include('partials/footer.html')
+
+  <!-- @include('partials/overlay.html') -->
+
+  <button class="lift" data-lift>
+    <svg width='46' height='36'>
+      <use href='img/sprite/sprite.svg#top'></use>
+    </svg>
+  </button>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
