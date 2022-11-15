@@ -11,17 +11,16 @@ tabParents.map((tabParent) => {
         e.preventDefault();
         const activeTabAttr = e.target.getAttribute("data-tab");
        
-        if (activeTabAttr === 'All'){
+        if (activeTabAttr === 'default'){
           addClassInArray([...tabParent.querySelectorAll('[data-tab-content]')], 'active');
           removeClassInArray(tabNav, 'active');
-          addCustomClass(tabParent.querySelector("[data-tab='All']"), 'active')
+          addCustomClass(tabParent.querySelector("[data-tab='default']"), 'active')
           
         } else{    
           removeClassInArray(tabNav, 'active');
           removeClassInArray(tabContent, 'active');
           addCustomClass(tabParent.querySelector(`[data-tab="${activeTabAttr}"]`),'active');
           addClassInArray([...tabParent.querySelectorAll(`[data-tab-content="${activeTabAttr}"]`)], 'active');
-          console.log('123')
         } 
            removeClassInArray(tabNav, 'active');
            addCustomClass(tabParent.querySelector(`[data-tab="${activeTabAttr}"]`), 'active');

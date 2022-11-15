@@ -2,6 +2,13 @@
 .index-first {
   padding-top: var(--header-height);
   padding-bottom: 15px;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+
+    grid-gap: clamp(14px, 1.84vw, 30px);
+  }
   &__inner {
     display: grid;
     width: 100%;

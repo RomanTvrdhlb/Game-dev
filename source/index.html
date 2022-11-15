@@ -12,21 +12,21 @@
       <div class="container">
         <div class="index-first__box">
           <ul class="main-buttons">
-            <li class="main-buttons__item"><button class="main-buttons__btn main-btn">Игры</button></li>
-            <li class="main-buttons__item"><button class="main-buttons__btn main-btn main-btn--yellow">Новые
-                игры</button></li>
-            <li class="main-buttons__item"><button class="main-buttons__btn main-btn main-btn--aqua">Игры для
-                мальчиков</button></li>
-            <li class="main-buttons__item"><button class="main-buttons__btn main-btn main-btn--orange">Игры на
-                двоих</button></li>
-            <li class="main-buttons__item"><button class="main-buttons__btn main-btn main-btn--pink">Игры для
-                девочек</button></li>
-            <li class="main-buttons__item"><button class="main-buttons__btn main-btn main-btn--green">Популярные
-                игры</button></li>
-            <li class="main-buttons__item"><button class="main-buttons__btn main-btn main-btn--red">Лучшие</button></li>
-            <li class="main-buttons__item"><button class="main-buttons__btn main-btn main-btn--blue">Для детей</button>
+            <li class="main-buttons__item"><a href="categories.html" class="main-buttons__btn main-btn">Игры</a></li>
+            <li class="main-buttons__item"><a href="categories.html" class="main-buttons__btn main-btn main-btn--yellow">Новые
+                игры</a></li>
+            <li class="main-buttons__item"><a href="categories.html" class="main-buttons__btn main-btn main-btn--aqua">Игры для
+                мальчиков</a></li>
+            <li class="main-buttons__item"><a href="categories.html" class="main-buttons__btn main-btn main-btn--orange">Игры на
+                двоих</a></li>
+            <li class="main-buttons__item"><a href="categories.html" class="main-buttons__btn main-btn main-btn--pink">Игры для
+                девочек</a></li>
+            <li class="main-buttons__item"><a href="categories.html" class="main-buttons__btn main-btn main-btn--green">Популярные
+                игры</a></li>
+            <li class="main-buttons__item"><a href="categories.html" class="main-buttons__btn main-btn main-btn--red">Лучшие</a></li>
+            <li class="main-buttons__item"><a href="categories.html" class="main-buttons__btn main-btn main-btn--blue">Для детей</a>
             </li>
-            <li class="main-buttons__item"><button class="main-buttons__btn main-btn main-btn--violet">Все игры</button>
+            <li class="main-buttons__item"><a href="categories.html" class="main-buttons__btn main-btn main-btn--violet">Все игры</a>
             </li>
           </ul>
           <div class="index-first__inner">
@@ -491,6 +491,10 @@
               </div>
             </div>
           </div>
+          <div class="index-top main-top main-top--yellow-line">
+            <h1 class="main-top__title">Онлайн Игры Бесплатно</h1>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -690,7 +694,12 @@
                 </li>
               </ul>
             </div>
-            <button class='main-slider__next'>
+            <button class='main-slider__prev main-slider__btn'>
+              <svg width='28' height='48'>
+                <use href='img/sprite/sprite.svg#arrow-r'></use>
+              </svg>
+            </button>
+            <button class='main-slider__next main-slider__btn'>
               <svg width='28' height='48'>
                 <use href='img/sprite/sprite.svg#arrow-r'></use>
               </svg>
@@ -814,7 +823,12 @@
 
               </ul>
             </div>
-            <button class='small-slider__next'>
+            <button class='small-slider__next small-slider__btn'>
+              <svg width='13' height='20'>
+                <use href='img/sprite/sprite.svg#arrow-r'></use>
+              </svg>
+            </button>
+            <button class='small-slider__prev small-slider__btn'>
               <svg width='13' height='20'>
                 <use href='img/sprite/sprite.svg#arrow-r'></use>
               </svg>
@@ -837,7 +851,7 @@
                 <button class="games-top__btn" data-tab='mounth'>За месяц</button>
               </li>
               <li class="games-top__item"><button class="games-top__btn" data-tab='Year'>За год</button></li>
-              <li class="games-top__item"><button class="games-top__btn  active" data-tab='All'>Все</button></li>
+              <li class="games-top__item"><button class="games-top__btn  active" data-tab='default'>Все</button></li>
             </ul>
           </div>
 

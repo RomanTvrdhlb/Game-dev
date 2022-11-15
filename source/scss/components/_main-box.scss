@@ -1,4 +1,8 @@
 .main-box {
+  display: flex;
+  flex-direction: column;
+
+  grid-gap: 5px;
   &__inner {
     display: grid;
     max-width: 270px;

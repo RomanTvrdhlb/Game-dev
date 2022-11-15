@@ -1,0 +1,23 @@
+.categories-second {
+  padding-bottom: 43px;
+
+@include tablet {
+    padding-bottom: 73px;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    padding: 22px 46px  21px;
+
+    background-color: var(--bg-o);
+    border-radius: 10px;
+    box-shadow: 7px 5px 4px rgba(0, 0, 0, 0.25);
+
+    grid-gap: clamp(2px, 1.902vw, 31px);
+
+@include tablet {
+      padding-bottom: 31px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.categories-third {
+  padding-bottom: clamp(100px, 10.307vw, 168px);
+
+  &__box {
+    padding: 22px 114px 26px;
+
+    background: var(--bg-o);
+    border-radius: 10px;
+    box-shadow: 7px 5px 4px rgba(0, 0, 0, 0.25);
+  }
+}

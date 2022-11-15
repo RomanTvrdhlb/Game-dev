@@ -45,6 +45,7 @@ const smallSlider = new Swiper('.small-slider__container', {
   observeParents: true,
   freemode: true,
   navigation: {
+    prevEl:'.small-slider__prev',
     nextEl: '.small-slider__next',
   },
 
@@ -58,6 +59,7 @@ const mainSwiper = new Swiper('.main-slider__container', {
   freemode: true,
 
   navigation: {
+    prevEl:'.main-slider__prev',
     nextEl: '.main-slider__next',
   },
  
