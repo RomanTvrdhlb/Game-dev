@@ -1,0 +1,53 @@
+.main-game {
+  display: grid;
+  padding-top: 16px;
+  overflow: hidden;
+
+  grid-gap: clamp(10px, 2.147vw, 35px);
+  grid-template-columns: auto 1fr;
+  &__box {
+    display: flex;
+    flex-direction: column;
+    max-height: var(--game-height);
+    padding: 0 5px;
+    overflow: auto;
+
+    grid-gap: 25px;
+    .main-box {
+      grid-gap: 11px;
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  &__inner {
+    position: relative;
+
+    width: 100%;
+    height: fit-content;
+  }
+  &__btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    padding: 10px 96px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    font-family: var(--font-family4);
+    color: var(--color-o);
+
+    background: var(--bg-a);
+    border-radius: 10px;
+    outline: 11px solid var(--color-o);
+    transform: translate(-50%, -50%);
+
+    transition: all 0.4s linear;
+    &:hover {
+      padding: 13px 99px;
+    }
+  }
+}

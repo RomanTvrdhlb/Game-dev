@@ -5,11 +5,45 @@
 
   grid-gap: clamp(10px, 1.84vw, 30px);
   grid-template-columns: 178px 128px 1fr;
-
+  &__item {
+    // position: relative;
+  }
   &__btn {
     position: relative;
 
     transition: all 0.4s;
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -50%;
+      left: 50%;
+      z-index: 20;
+
+      width: 100%;
+      height: 35px;
+
+      transform: translateX(-49.8%);
+      opacity: 0;
+    }
+
+    &.yellow-btn {
+      &::before {
+        background-color: var(--bg-g);
+      }
+    }
+    &.violet-btn {
+      &::before {
+        background-color: var(--bg-c);
+      }
+    }
+
+    &.active {
+      outline: none;
+      &:before {
+        opacity: 1;
+      }
+    }
   }
 
   &__label {

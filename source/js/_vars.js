@@ -8,6 +8,7 @@ export default {
   modals: [...document.querySelectorAll('[data-popup]')],
   modalsButton: [...document.querySelectorAll("[data-btn-modal]")],
   header: document.querySelector("header"),
+  game: document.querySelector(".main-game__inner"),
   video: [...document.querySelectorAll("[data-video]")],
   startButton: document.querySelector(".start-button"),
   image: document.querySelector(".our-section__image"),

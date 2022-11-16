@@ -3,7 +3,7 @@ import { enableScroll } from '../functions/enable-scroll';
 import { getHeaderHeight } from '../functions/header-height';
 import _vars from '../_vars';
 
-import {addCustomClass, toggleCustomClass, elementHeight, removeCustomClass} from '../functions/customFunctions'
+import {addCustomClass, toggleCustomClass, elementHeight, removeCustomClass, addClassInArray} from '../functions/customFunctions'
 
 let overlay = document.querySelector('[data-overlay]');
 // let mobileMenu = document.querySelector('.mobile-menu');

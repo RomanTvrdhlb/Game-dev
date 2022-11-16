@@ -8,11 +8,16 @@ header {
 }
 
 .header {
-  display: flex;
-  align-items: center;
   padding: clamp(19px, 1.779vw, 29px) 0 clamp(16px, 1.718vw, 28px);
 
-  grid-gap: clamp(20px, 2.883vw, 47px);
+  &__box {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    grid-gap: clamp(20px, 2.883vw, 47px);
+  }
 }
 .logo {
   display: flex;
