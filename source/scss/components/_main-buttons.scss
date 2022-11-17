@@ -1,7 +1,33 @@
 .main-buttons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
 
-  grid-gap: 17px;
+  grid-gap: clamp(5px, 1.043vw, 17px);
+
+@include laptop {
+    justify-content: start;
+  }
+
+@include small-tablet {
+    display: grid;
+    overflow-x: auto;
+
+    border-radius: 15px;
+
+    grid-auto-flow: column;
+    grid-gap: 0;
+    grid-template-rows: repeat(2, auto);
+  }
+
+  // &__item {
+  //   @include small-tablet {
+  //     &:nth-child(4),
+  //     &:nth-child(6),
+  //     &:last-child {
+  //       display: none;
+  //     }
+  //   }
+  // }
 }

@@ -1,16 +1,33 @@
 .main-box {
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   grid-gap: 5px;
+
+@include tablet {
+    grid-gap: 15px;
+  }
+
   &__inner {
     display: grid;
     max-width: 270px;
 
     grid-gap: 8px 10px;
     grid-template-columns: repeat(4, 1fr);
-  }
 
+@include laptop {
+      max-width: 100%;
+
+      grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    }
+
+@include tablet {
+      max-width: 100%;
+
+      justify-items: center;
+    }
+  }
   &__img {
     width: 60px;
     height: 60px;
@@ -19,6 +36,24 @@
     outline: solid 3px var(--color-p);
 
     transition: all 0.4s;
+
+@include big-desktop {
+      &:not(:nth-child(-n+16)) {
+        display: none;
+      }
+    }
+
+@include tablet {
+      width: 100%;
+      height: 100%;
+    }
+
+@include small-tablet {
+      &:not(:nth-child(-n+16)) {
+        display: flex;
+      }
+    }
+
     &--blue {
       outline: solid 3px var(--color-w);
     }
@@ -28,13 +63,25 @@
     &--orange {
       outline: solid 3px var(--color-i);
     }
+    &--yellow {
+      outline: solid 3px var(--color-g);
+    }
+    &--red {
+      outline: solid 3px var(--color-l);
+    }
+    &--mode {
+      outline: solid 3px var(--color-m);
+    }
     &:hover {
       outline: solid 3px var(--color-p);
     }
-    image,
+    img,
     picture {
       display: block;
       width: 100%;
+      height: 100%;
+
+      border-radius: 10px;
     }
   }
 
@@ -43,6 +90,16 @@
       max-width: 410px;
 
       grid-template-columns: repeat(6, 1fr);
+
+@include big-desktop {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+@include laptop {
+        max-width: 100%;
+
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+      }
     }
   }
 }

@@ -4,9 +4,17 @@
   display: flex;
   align-items: center;
   min-height: 49px;
-  // padding-bottom: 10px;
+
+@include tablet {
+    justify-content: center;
+    min-height: initial;
+  }
+
   &--blue-line {
     .main-top__title {
+      @include tablet {
+        background-color: var(--color-w);
+      }
       &::before {
         background-color: var(--color-w) !important;
       }
@@ -14,6 +22,9 @@
   }
   &--pink-line {
     .main-top__title {
+      @include tablet {
+        background-color: var(--color-t);
+      }
       &::before {
         background-color: var(--color-t) !important;
       }
@@ -21,6 +32,9 @@
   }
   &--orange-line {
     .main-top__title {
+      @include tablet {
+        background-color: var(--color-i);
+      }
       &::before {
         background-color: var(--color-i) !important;
       }
@@ -29,12 +43,29 @@
 
   &--yellow-line {
     .main-top__title {
+      @include tablet {
+        background-color: var(--color-y);
+      }
       &::before {
         background-color: var(--color-y) !important;
       }
     }
   }
 
+  &--red-line {
+    .main-top__title {
+      @include tablet {
+        background-color: var(--color-l);
+      }
+    }
+  }
+  &--mode-line {
+    .main-top__title {
+      @include tablet {
+        background-color: var(--color-m);
+      }
+    }
+  }
 
   &__title {
     position: relative;
@@ -47,6 +78,21 @@
     line-height: 130%;
     font-family: var(--font-family);
     color: var(--color-b);
+
+@include tablet {
+      width: 100%;
+      padding: 8px 22px 12px;
+
+      text-align: center;
+
+      background-color: var(--color-p);
+      border-radius: 6px;
+      &:before {
+        opacity: 0;
+      }
+    }
+
+
 
     &:before {
       content: "";

@@ -13,9 +13,21 @@
     display: grid;
     width: 100%;
 
-    grid-gap: clamp(20px, 2.699vw, 44px);
+    grid-gap: clamp(10px, 2.699vw, 44px);
     grid-template-columns: repeat(4, 1fr);
-    justify-items: end;
+
+@include laptop {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: start;
+    }
+
+@include small-tablet {
+      grid-template-columns: 100%;
+    }
+
+@include mobile {
+      display: none;
+    }  justify-items: end;
   }
 }
 

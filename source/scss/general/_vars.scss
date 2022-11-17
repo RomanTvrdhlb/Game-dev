@@ -1,7 +1,9 @@
 :root {
   --body-bg:#ffffff;
-
-
+  --header-height: 107px;
+  @media (max-width:1024px){
+    --header-height: 72px;
+  }
 
   --content-width: 1370px;
   --container-offset: 10px;
@@ -58,6 +60,8 @@
   --bg-r: rgba(10, 9, 9, 0.7); // var(--bg-r);
   --bg-i:  #8A88F4; // var(--bg-i);
   --bg-k:  #808080; // var(--bg-k);
+  --bg-v:  #6EFBC0; // var(--bg-v);
+  --bg-j:  #CF92FF; // var(--bg-j);
   --bg-o:   rgba(255, 255, 255, 0.5); // var(--bg-o);
   --bg-p:  rgba(217, 217, 217, 0.6); // var(--bg-p);
   --bg-l:  rgba(217, 217, 217, 0.5); // var(--bg-l);

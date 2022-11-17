@@ -1,4 +1,6 @@
 .favorite-slider {
+  z-index: 30;
+
   display: none;
   &__container {
     padding: 20px 44px;
@@ -7,6 +9,10 @@
     background-color: var(--bg-c);
     border-radius: 20px;
     box-shadow: 9px 12px 4px rgba(0, 0, 0, 0.4);
+
+@include tablet {
+      padding: 20px clamp(6px, 1.042vw, 44px);
+    }
   }
   &__prev {
     top: 0;
@@ -34,11 +40,18 @@
   position: absolute;
   bottom: -135px;
   left: 0;
+  z-index: 30;
 
   display: none;
-  min-width: 1370px;
+  width: Min(calc(100vw - 20px), 1370px);
 
+@include tablet {
+    bottom: 0;
 
+    width: 100%;
+
+    transform: translateY(100%);
+  }
 
   &.active {
     display: flex;
@@ -51,6 +64,13 @@
     background-color: var(--bg-g);
     border-radius: 20px;
     box-shadow: 9px 12px 4px rgba(0, 0, 0, 0.4);
+
+    @include tablet {
+      padding: 20px clamp(6px, 1.042vw, 44px);
+    }
+    &--mode {
+      background-color: var(--bg-c);
+    }
   }
 
 

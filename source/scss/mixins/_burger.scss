@@ -1,64 +1,80 @@
 /* stylelint-disable */
 
 @mixin burger {
-  --burger-width: 30px;
-  --burger-height: 30px;
-  --burger-line-height: 2px;
-
   position: relative;
-  border: none;
-  padding: 0;
+
   width: var(--burger-width);
   height: var(--burger-height);
-  color: #000;
-  background-color: transparent;
+
+  color: #000000;
+
   cursor: pointer;
+
+  --burger-height: 15px;
+  --burger-line-height: 2px;
+  --burger-width: 15px;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    left: 0;
-    width: 100%;
+    left: 50%;
+
+    width: 15px !important;
     height: var(--burger-line-height);
+
     background-color: currentColor;
+    transform: translateX(-50%);
+
     transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
   }
 
   &::before {
-    top: 0;
+    top: 10px;
   }
 
   &::after {
-    top: calc(100% - var(--burger-line-height));
+    bottom: 10px;
   }
 
-  &__line {
+  .burger__line {
     position: absolute;
-    left: 0;
     top: 50%;
-    width: 100%;
+    left: 50%;
+
+    width: 15px;
     height: var(--burger-line-height);
+
     background-color: currentColor;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
+
     transition: transform 0.3s ease-in-out;
   }
 
-  &--active {
+  &.active {
     &::before {
       top: 50%;
-      transform: rotate(45deg);
+
+      width: 19px !important;
+
+      transform: translate(-50%, -50%) rotate(45deg);
+
       transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
     }
 
     &::after {
       top: 50%;
-      transform: rotate(-45deg);
+
+      width: 19px !important;
+
+      transform: translate(-50%, -50%) rotate(-45deg);
+
       transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
     }
 
     .burger__line {
       transform: scale(0);
+
       transition: transform 0.3s ease-in-out;
     }
   }

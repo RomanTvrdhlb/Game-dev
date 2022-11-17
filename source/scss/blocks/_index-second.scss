@@ -8,5 +8,14 @@
     flex-direction: column;
 
     grid-gap: 12px;
+
+@include mobile {
+      .main-slider {
+        display: none;
+      }
+      .main-top {
+        display: none;
+      }
+    }
   }
 }

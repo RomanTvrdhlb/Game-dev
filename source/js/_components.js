@@ -4,9 +4,11 @@ import './components/lift';
 // import './components/galery';
 // import './components/modals';
 import './components/sliders';
-// import './components/replaceEL';
+import './components/replaceEL';
 import './components/getDinamicHeight';
 // import './components/lightbox';
 // import './components/select';
 import './components/tabs';
+import './components/moreSliders';
+import './components/searchBtn';
 

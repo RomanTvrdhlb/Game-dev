@@ -1,64 +1,32 @@
-let headerBottom = document.querySelector('.header__bottom');
-let mobileParrent = document.querySelector('.mobile-menu');
-let desktopParrent = document.querySelector('.header');
-let imagesAccordion = document.querySelector('.main-accordion--images');
-let breakpointAccordion = 1024;
-let breakpointsublist = 576;
+import {addCustomClass, removeCustomClass} from '../functions/customFunctions';
 
+let mobileParrent = document.querySelector('.mobile-nav');
+let desktopParrent = document.querySelector('.header-nav');
+let breakpoint = 1024;
+const currentElements = [...document.querySelectorAll('.header-nav__item')];
 
-const replaceMobileMenu = (element, parentDesktop, parentMobile) => {
+// const currentItem = currentElements.map(function(item){ return item})
+// console.log(currentItem)
+
+const replaceElements = (elements, parentDesktop, parentMobile) => {
   let containerWidth = document.documentElement.clientWidth;
-  if (containerWidth <= breakpointAccordion) {
-    parentMobile.insertAdjacentElement('beforeend', element);
-  };
-  if (containerWidth > breakpointAccordion) {
-    parentDesktop.insertAdjacentElement('beforeend', element);
-  }
+
+  elements.map(function(element){
+    if (containerWidth <= breakpoint) {
+      parentMobile.insertAdjacentElement('beforeend', element);
+    };
+    if (containerWidth > breakpoint) {
+      parentDesktop.insertAdjacentElement('afterbegin', element);
+    }
+  })
 }
 
 window.addEventListener('resize', () => {
-  replaceMobileMenu(headerBottom, desktopParrent, mobileParrent);
+  replaceElements(currentElements, desktopParrent, mobileParrent);
 });
 window.addEventListener('DOMContentLoaded', () => {
-  replaceMobileMenu(headerBottom, desktopParrent, mobileParrent);
+  replaceElements(currentElements, desktopParrent, mobileParrent);
 });
-
-const replaceSublistItem = (element, parentDesktop, parentMobile) => {
-  let containerWidth = document.documentElement.clientWidth;
-  if (containerWidth <= breakpointsublist) {
-    parentMobile.insertAdjacentElement('beforeend', element);
-  };
-  if (containerWidth > breakpointsublist) {
-    parentDesktop.insertAdjacentElement('afterend', element);
-  }
-}
-
-
-const replaceAcordionTitle = (element, parentDesktop, parentMobile) => {
-  let containerWidth = document.documentElement.clientWidth;
-  if (containerWidth <= breakpointAccordion) {
-    parentMobile.insertAdjacentElement('beforeend', element);
-  };
-  if (containerWidth > breakpointAccordion) {
-    parentDesktop.insertAdjacentElement('afterend', element);
-  }
-}
-
-if (imagesAccordion) {
-  const imagesAccordionItems = [...imagesAccordion.querySelectorAll('.main-accordion__item')];
-  imagesAccordionItems.map(function (item) {
-    const itemButton = item.querySelector('.main-accordion__btn');
-    const itemImage = item.querySelector('.main-accordion__image');
-    const itemTitle = item.querySelector('.main-accordion__btn-title');
-
-    window.addEventListener('resize', () => {
-      replaceAcordionTitle(itemTitle, itemImage, itemButton);
-    });
-    window.addEventListener('DOMContentLoaded', () => {
-      replaceAcordionTitle(itemTitle, itemImage, itemButton);
-    });
-  })
-}
 
 
 

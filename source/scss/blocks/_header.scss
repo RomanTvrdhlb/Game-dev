@@ -11,25 +11,49 @@ header {
   padding: clamp(19px, 1.779vw, 29px) 0 clamp(16px, 1.718vw, 28px);
 
   &__box {
-    position: relative;
-
-    display: flex;
+    display: grid;
     align-items: center;
 
     grid-gap: clamp(20px, 2.883vw, 47px);
+    grid-template-columns: auto 1fr;
+
+@include tablet {
+      grid-gap: 0 clamp(20px, 2.883vw, 47px);
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 }
 .logo {
   display: flex;
   align-items: center;
 
+@include tablet {
+    order: 2;
 
-  image,
+    justify-self: center;
+  }
+
+  img,
   picture {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: clamp(165px, 12.27vw, 200px);
+    height: auto;
   }
 }
+.burger {
+  display: none;
+  min-width: 33px ;
+  min-height: 33px;
 
+  background: var(--bg-j);
+  border: 1px solid var(--color-b);
+  border-radius: 5px;
+
+@include tablet {
+    display: flex;
+    order: 1;
+  }
+
+@include burger;
+}
 

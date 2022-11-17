@@ -5,31 +5,77 @@
 
   grid-gap: clamp(10px, 1.84vw, 30px);
   grid-template-columns: 178px 128px 1fr;
+
+@include tablet {
+    display: flex;
+    order: 4;
+    width: fit-content;
+  }
+
   &__item {
-    // position: relative;
+    @include tablet {
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+    &--favorite {
+      order: 1;
+
+@include tablet {
+        z-index: 4;
+
+        order: 2;
+      }
+    }
+    &--history {
+      order: 2;
+
+@include tablet {
+        order: 1;
+      }
+    }
   }
   &__btn {
     position: relative;
+    z-index: 0;
 
     transition: all 0.4s;
+
+@include tablet {
+      z-index: 1;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      min-width: initial;
+
+      font-size: 12px;
+
+      border-radius: 6px;
+      outline: none !important;
+      box-shadow: none;
+    }
 
     &:before {
       content: "";
       position: absolute;
       bottom: -50%;
       left: 50%;
-      z-index: 20;
+      z-index: -1;
 
       width: 100%;
       height: 35px;
 
-      transform: translateX(-49.8%);
+      transform: translateX(-49.9%);
       opacity: 0;
+
+      pointer-events: none;
     }
 
     &.yellow-btn {
       &::before {
         background-color: var(--bg-g);
+        transform: translateX(-50%);
       }
     }
     &.violet-btn {
@@ -40,8 +86,16 @@
 
     &.active {
       outline: none;
-      &:before {
-        opacity: 1;
+      box-shadow: none !important;
+
+@include tablet {
+        border-radius: 6px 6px 0 0;
+      }
+
+@include for-tablet {
+        &:before {
+          opacity: 1;
+        }
       }
     }
   }
@@ -53,6 +107,7 @@
     position: absolute;
     top: -21px;
     right: -18px;
+    z-index: 3;
 
     display: flex;
     justify-content: center;
@@ -69,11 +124,18 @@
 
     background-color: var(--bg-d);
     border-radius: 50%;
+
+@include tablet {
+      top: -8px;
+      right: -2px;
+    }
   }
 
   &__form {
     position: relative;
+    z-index: 30;
 
+    order: 3;
     width: 100%;
     max-width: 353px;
     padding: 10px 8px;
@@ -82,7 +144,22 @@
     border-radius: 15px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
-    justify-self: end;
+    transition: all 0.4s;
+
+@include tablet {
+      position: absolute;
+      top: var(--header-height);
+      right: 10px;
+
+      transform: translateX(120%);
+
+
+
+
+      &.active {
+        transform: translateX(0);
+      }
+    }  justify-self: end;
   }
 
   &__input {

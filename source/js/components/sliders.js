@@ -50,32 +50,23 @@ const smallSlider = new Swiper('.small-slider__container', {
   },
 
 });
+const hiddenSliders = [...document.querySelectorAll('.header-slider__container')]; 
+  hiddenSliders.map(function(slider){
+    const headerSwiper = new Swiper (slider, {
+      slidesPerView: 'auto',
+      spaceBetween: 8,
+      observer: true,
+      observeParents: true,
+      freemode: true,
+      navigation: {
+        prevEl:'.header-slider__prev',
+        nextEl: '.header-slider__next',
+      },
+    });
+  })
 
-const headerSwiper = new Swiper ('.header-slider__container', {
-  slidesPerView: 'auto',
-  spaceBetween: 8,
-  observer: true,
-  observeParents: true,
-  freemode: true,
-  navigation: {
-    prevEl:'.header-slider__prev',
-    nextEl: '.header-slider__next',
-  },
 
-});
 
-const favoriteSwiper = new Swiper ('.favorite-slider__container', {
-  slidesPerView: 'auto',
-  spaceBetween: 8,
-  observer: true,
-  observeParents: true,
-  freemode: true,
-  navigation: {
-    prevEl:'.favorite-slider__prev',
-    nextEl: '.favorite-slider__next',
-  },
-
-});
 
 const mainSwiper = new Swiper('.main-slider__container', {
   slidesPerView: 'auto',

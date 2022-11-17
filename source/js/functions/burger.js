@@ -9,7 +9,7 @@ let overlay = document.querySelector('[data-overlay]');
 // let mobileMenu = document.querySelector('.mobile-menu');
 
 const burger = document.querySelector('.burger');
-const mobileMenu = document.querySelector('.mobile-header');
+const mobileMenu = document.querySelector('.mobile-menu');
 
 
 // let burger = document.querySelector('.burger');
@@ -21,7 +21,8 @@ const mobileMenuHandler = function(overlay, mobileMenu, burger) {
     mobileMenu.classList.toggle('active');
     burger.classList.toggle('active');
     overlay.classList.toggle('active');
-    addCustomClass(_vars.bodyEl, 'fixed')
+    overlay.classList.toggle('overlay--mode');
+    toggleCustomClass(_vars.bodyEl, 'fixed')
     // headerTag.classList.toggle('active');
     // document.body.classList.toggle('dis-scroll')
     getHeaderHeight();
@@ -32,7 +33,11 @@ const hideMenuHandler = function(overlay, mobileMenu, burger) {
     mobileMenu.classList.remove('active');
     burger.classList.remove('active');
     overlay.classList.remove('active');
+    overlay.classList.remove('overlay--mode');
     removeCustomClass(_vars.bodyEl, 'fixed')
+
+    console.log(_vars.bodyEl)
+
     // headerTag.classList.remove('active');
     // document.body.classList.remove('dis-scroll')
 }
