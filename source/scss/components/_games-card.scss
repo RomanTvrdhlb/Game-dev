@@ -9,12 +9,11 @@
   border-radius: 10px;
   box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
 
-  grid-template-columns: 30px 1fr;
+  grid-template-columns: minmax(17px,30px) 1fr;
 
-@include mobile {
-    min-width: 85px;
+@include small-tablet {
+    min-width: initial;
   }
-
   &__name {
     padding: clamp(7px, 0.552vw, 9px) clamp(4px, 0.368vw, 6px);
 
@@ -36,6 +35,8 @@
     img,
     picture {
       height: 100%;
+
+      border-radius: 10px 0 0 10px;
     }
   }
 }

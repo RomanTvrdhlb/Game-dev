@@ -46,6 +46,7 @@
   width: Min(calc(100vw - 20px), 1370px);
 
   transform: translateY(100%);
+
 @include tablet {
     bottom: 0;
 
@@ -112,7 +113,6 @@
     position: relative;
 
     width: 100%;
-    margin: 5px 5px 6px 0;
 
     filter: drop-shadow(6px 5px 2px rgba(0, 0, 0, 0.25));
   }
@@ -125,6 +125,11 @@
     max-width: 78px;
 
     border-radius: 10px;
+
+@include mobile {
+      width: 45px;
+      height: 45px;
+    }
   }
 
   &__img {

@@ -20,14 +20,4 @@
     grid-gap: 0;
     grid-template-rows: repeat(2, auto);
   }
-
-  // &__item {
-  //   @include small-tablet {
-  //     &:nth-child(4),
-  //     &:nth-child(6),
-  //     &:last-child {
-  //       display: none;
-  //     }
-  //   }
-  // }
 }

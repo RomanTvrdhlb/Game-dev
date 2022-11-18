@@ -33,5 +33,20 @@
 
       grid-template-columns: repeat(auto-fill, 91px);
     }
+
+@include mobile {
+      display: flex;
+      justify-content: flex-start;
+      width: calc(100% + (var(--padding-box) * 2));
+      margin: 0 calc(var(--padding-box) * -1);
+      padding: 9px var(--padding-box);
+      overflow: auto;
+
+      grid-gap: 17px;
+
+      ::-webkit-progress-bar {
+        display: none;
+      }
+    }
   }
 }

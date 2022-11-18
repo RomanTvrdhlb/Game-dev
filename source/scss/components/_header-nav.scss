@@ -143,15 +143,17 @@
 @include tablet {
       position: absolute;
       top: var(--header-height);
-      right: 10px;
+      right: 0;
 
-      transform: translateX(120%);
+      max-width: 290px;
+
+      transform: translate(120%, -50%);
 
 
 
 
       &.active {
-        transform: translateX(0);
+        transform: translate(0, -50%);
       }
     }  justify-self: end;
   }

@@ -6,13 +6,9 @@
   grid-gap: clamp(10px, 2.147vw, 35px);
   grid-template-columns: auto 1fr;
 
-@include laptop {
-    .main-box__inner {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-
 @include small-tablet {
+    padding: 0;
+
     grid-template-columns: 100%;
   }
 
@@ -25,9 +21,39 @@
 
     grid-gap: 25px;
 
-    @include small-tablet {
-      display: none;
+@include laptop {
+      .main-box__inner {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
+
+@include small-tablet {
+      flex-direction: row;
+
+      .main-box {
+        padding: 5px 0;
+        &__inner {
+          grid-auto-flow: column;
+          grid-template-rows: repeat(2, auto);
+        }
+        &__img {
+          width: 60px;
+        }
+      }
+    }
+
+@include mobile {
+      .main-box {
+        width: initial;
+      }
+      .main-top {
+        justify-content: flex-start;
+        &__title {
+          width: initial;
+        }
+      }
+    }
+
     .main-box {
       grid-gap: 11px;
     }
@@ -46,12 +72,12 @@
     top: 50%;
     left: 50%;
 
-    padding: 10px 96px;
+    padding: clamp(5px, 0.613vw, 10px) clamp(21px, 5.89vw, 97px);
 
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 37px;
+    font-size: clamp(16px, 1.963vw, 32px);
+    line-height: 125%;
     font-family: var(--font-family4);
     color: var(--color-o);
 
@@ -61,8 +87,18 @@
     transform: translate(-50%, -50%);
 
     transition: all 0.4s linear;
+
+    will-change: transform;
+
+@include mobile {
+      font-family: var(--font-family);
+      color: var(--color-b);
+
+      border-radius: 39px;
+    }
+
     &:hover {
-      padding: 13px 99px;
+      transform: translate(-50%, -50%) scale(1.1);
     }
   }
 }

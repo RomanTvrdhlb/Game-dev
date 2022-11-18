@@ -11,19 +11,6 @@
     }
   }
 
-  &__list {
-    padding: 9px 0;
-
-@include mobile {
-      overflow: auto;
-
-      grid-auto-flow: column;
-      grid-template-rows: auto;
-      ::-webkit-progress-bar {
-        display: none;
-      }
-    }
-  }
   &__title {
     display: flex;
     align-items: center;

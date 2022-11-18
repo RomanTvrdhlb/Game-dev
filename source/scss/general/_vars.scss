@@ -4,7 +4,7 @@
   @media (max-width:1024px){
     --header-height: 72px;
   }
-
+  --padding-box: calc(clamp(11px, 6.994vw, 114px));
   --content-width: 1370px;
   --container-offset: 10px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));

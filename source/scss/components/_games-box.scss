@@ -56,8 +56,12 @@
     border-radius: 0 0 10px 10px;
 
 @include mobile {
+      display: inline-block;
+      margin: 0;
+      padding: 4px 5px;
       overflow-x: hidden;
 
+      text-align: center;
       white-space: nowrap;
       text-overflow: ellipsis;
     }

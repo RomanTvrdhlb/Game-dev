@@ -3,6 +3,10 @@
     overflow: hidden;
 
     border-radius: 15px;
+
+@include small-tablet {
+      border-radius: 17px;
+    }
   }
   &__btn {
     position: absolute;
@@ -14,11 +18,22 @@
     width: 63px;
 
     background-color: var(--bg-r);
+
+@include small-tablet {
+      width: 40px;
+    }
+
+    svg {
+      @include small-tablet {
+        width: 45%;
+        height: auto;
+      }
+    }
   }
 
   &__prev {
     top: 5px;
-    bottom: 7px;
+    bottom: 5px;
     left: 0;
 
     border-radius: 10px 0 0 10px;
@@ -32,7 +47,7 @@
   &__next {
     top: 5px;
     right: 0;
-    bottom: 7px;
+    bottom: 5px;
 
     border-radius: 0 10px 10px 0;
   }

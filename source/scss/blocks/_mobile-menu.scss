@@ -5,7 +5,7 @@
   left: 0;
   z-index: 100;
 
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: flex-start;
   min-width: 270px;
@@ -19,8 +19,11 @@
   transform: translateX(-300%);
 
   transition: all 0.4s;
+ grid-gap: 7px;
 
-  grid-gap: 7px;
+@include tablet {
+    display: flex;
+  } 
   &::-webkit-scrollbar {
     display: none;
   }
