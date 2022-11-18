@@ -1,9 +1,20 @@
 .games-rating {
-  display: flex;
+  display: grid;
   align-items: center;
 
   grid-column: span 2;
-  grid-gap: 5px;
+  grid-gap: clamp(1px, 0.307vw, 5px);
+  grid-template-columns: auto auto 1fr;
+
+@include mobile {
+    grid-template-columns: auto 1fr;
+  }
+
+  &__name {
+    @include for-tablet {
+      display: none;
+    }
+  }
   &__list {
     display: flex;
     flex-wrap: nowrap;
@@ -11,6 +22,19 @@
     overflow-x: auto;
 
     grid-gap: clamp(5px, 0.982vw, 16px);
+
+@include tablet {
+      grid-column: span 3;
+      grid-row: 2;
+    }
+
+@include mobile {
+      grid-column: span 2;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
   &__views {
     display: flex;
@@ -25,12 +49,12 @@
 
     font-style: normal;
     font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: clamp(10px, 0.736vw, 12px);
+    line-height: 125%;
     font-family: var(--font-family);
     color: var(--color-n);
 
-    grid-gap: clamp(3px, 0.982vw, 16px);
+    grid-gap: clamp(1px, 0.982vw, 16px);
   }
   &__icon {
     display: flex;
@@ -74,5 +98,9 @@
     background-color: var(--color-a);
     border-radius: 50%;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 -2px 4px rgba(0, 0, 0, 0.25);
+
+@include mobile {
+      display: none;
+    }
   }
 }

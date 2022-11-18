@@ -6,16 +6,26 @@
     flex-direction: column;
 
     grid-gap: 14px;
+
+@include mobile {
+      .management-box {
+        display: none;
+      }
+    }
   }
   &__inner {
     display: grid;
-    padding: 15px;
+    padding: clamp(7px, 0.92vw, 15px);
 
     background: var(--bg-a);
     border: 5px solid var(--bg-e);
     border-radius: 10px;
 
     grid-gap: 7px;
-    grid-template-columns: 900px 1fr;
+    grid-template-columns: 1fr auto;
+
+@include small-tablet {
+      grid-template-columns: 100%;
+    }
   }
 }

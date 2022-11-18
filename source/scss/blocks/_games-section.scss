@@ -4,7 +4,7 @@
   &__box {
     display: flex;
     flex-direction: column;
-    padding: 22px 46px  31px;
+    padding: clamp(12px, 1.35vw, 22px) clamp(11px, 2.822vw, 46px)  clamp(28px, 1.902vw, 31px);
 
     background-color: var(--bg-o);
     border-radius: 10px;

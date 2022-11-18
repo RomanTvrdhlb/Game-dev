@@ -38,19 +38,18 @@
 
 .header-slider {
   position: absolute;
-  bottom: -135px;
+  bottom: 0;
   left: 0;
   z-index: 30;
 
   display: none;
   width: Min(calc(100vw - 20px), 1370px);
 
+  transform: translateY(100%);
 @include tablet {
     bottom: 0;
 
     width: 100%;
-
-    transform: translateY(100%);
   }
 
   &.active {
@@ -65,9 +64,10 @@
     border-radius: 20px;
     box-shadow: 9px 12px 4px rgba(0, 0, 0, 0.4);
 
-    @include tablet {
+@include tablet {
       padding: 20px clamp(6px, 1.042vw, 44px);
     }
+
     &--mode {
       background-color: var(--bg-c);
     }

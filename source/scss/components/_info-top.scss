@@ -24,10 +24,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 83px;
-    max-width: 117px;
     min-height: 21px;
-    padding: 4px 12px;
+    padding: 4px clamp(4px, 0.736vw, 12px);
 
     font-style: normal;
     font-weight: 700;

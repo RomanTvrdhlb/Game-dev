@@ -1,13 +1,28 @@
 .single-games {
-  padding: 22px 114px 7px;
-
   background: var(--bg-o);
   border-radius: 10px;
   box-shadow: 7px 5px 4px rgb(0 0 0 / 25%);
 
   grid-gap: 18px;
+
+@include mobile {
+    .games-bottom {
+      display: none;
+    }
+  }
+
   &__list {
-    padding-bottom: 9px;
+    padding: 9px 0;
+
+@include mobile {
+      overflow: auto;
+
+      grid-auto-flow: column;
+      grid-template-rows: auto;
+      ::-webkit-progress-bar {
+        display: none;
+      }
+    }
   }
   &__title {
     display: flex;

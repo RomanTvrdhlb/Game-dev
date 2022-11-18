@@ -48,6 +48,17 @@ const smallSlider = new Swiper('.small-slider__container', {
     prevEl:'.small-slider__prev',
     nextEl: '.small-slider__next',
   },
+  breakpoints: {
+    // mobile - 320-576
+    300: {
+      spaceBetween:6,
+    
+    },
+    // tablet - 576-1240
+    576: {
+      spaceBetween: 19.5,
+    },
+  }
 
 });
 const hiddenSliders = [...document.querySelectorAll('.header-slider__container')]; 

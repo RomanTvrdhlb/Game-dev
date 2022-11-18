@@ -13,14 +13,16 @@
   }
   &__name {
     position: relative;
-
-    font-style: normal;
+ font-style: normal;
     font-weight: 400;
     font-size: clamp(13px, 0.92vw, 15px);
     line-height: 120%;
     font-family: var(--font-family1);
     color: var(--color-a);
 
+@include tablet {
+      display: none;
+    } 
     &:before {
       content: "";
       position: absolute;

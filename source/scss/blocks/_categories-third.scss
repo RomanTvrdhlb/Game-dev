@@ -1,6 +1,10 @@
 .categories-third {
   padding-bottom: clamp(100px, 10.307vw, 168px);
 
+@include mobile {
+    display: none;
+  }
+
   &__box {
     background: var(--bg-o);
     border-radius: 10px;

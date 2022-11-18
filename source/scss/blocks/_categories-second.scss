@@ -8,7 +8,7 @@
   &__box {
     display: flex;
     flex-direction: column;
-    padding: 22px 46px  21px;
+    padding: clamp(7px, 1.35vw, 22px) clamp(6px, 2.822vw, 46px)  21px;
 
     background-color: var(--bg-o);
     border-radius: 10px;

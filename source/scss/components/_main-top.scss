@@ -92,8 +92,6 @@
       }
     }
 
-
-
     &:before {
       content: "";
       position: absolute;
@@ -124,5 +122,9 @@
     line-height: 120%;
     font-family: var(--font-family);
     color: var(--color-b);
+
+@include mobile {
+      text-align: center;
+    }
   }
 }

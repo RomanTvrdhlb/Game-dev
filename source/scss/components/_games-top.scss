@@ -7,6 +7,15 @@
   background-color: var(--bg-e);
   border-radius: 10px;
 
+@include mobile {
+    flex-direction: column;
+    padding: 12px clamp(12px, 0.982vw, 16px) 0;
+
+    background-color: transparent;
+
+    grid-gap: 2px;
+  }
+
   &__title {
     font-style: normal;
     font-weight: 700;
@@ -14,6 +23,16 @@
     line-height: 125%;
     font-family: var(--font-family);
     color: var(--color-b);
+
+@include mobile {
+      width: 100%;
+      padding: 2px 7px 7px;
+
+      text-align: center;
+
+      background-color: var(--bg-e);
+      border-radius: 10px;
+    }
   }
   &__list {
     display: flex;
@@ -24,6 +43,15 @@
 @include tablet {
       border-radius: clamp(13px, 1.043vw, 17px);
     }
+
+@include mobile {
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  &__item {
+    width: 100%;
   }
   &__btn {
     display: flex;
@@ -31,7 +59,7 @@
     align-items: center;
     min-width: 79px;
     max-height: 31px;
-    padding: 8px 23px;
+    padding: 8px clamp(5px, 1.411vw, 23px);
 
     font-style: normal;
     font-weight: 700;
@@ -47,6 +75,10 @@
 
 @include tablet {
       border-radius: 10px;
+    }
+
+@include mobile {
+      width: 100%;
     }
 
     &:hover {

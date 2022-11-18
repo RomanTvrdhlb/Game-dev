@@ -70,26 +70,20 @@
       opacity: 0;
 
       pointer-events: none;
+
+@include laptop {
+        border-radius: 10px 10px 0 0;
+      }
     }
 
-    &.yellow-btn {
-      &::before {
-        background-color: var(--bg-g);
-        transform: translateX(-50%);
-      }
-    }
-    &.violet-btn {
-      &::before {
-        background-color: var(--bg-c);
-      }
-    }
+
 
     &.active {
       outline: none;
       box-shadow: none !important;
 
 @include tablet {
-        border-radius: 6px 6px 0 0;
+        border-radius: 6px 6px 6px 0;
       }
 
 @include for-tablet {

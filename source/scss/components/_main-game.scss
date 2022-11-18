@@ -5,6 +5,17 @@
 
   grid-gap: clamp(10px, 2.147vw, 35px);
   grid-template-columns: auto 1fr;
+
+@include laptop {
+    .main-box__inner {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+@include small-tablet {
+    grid-template-columns: 100%;
+  }
+
   &__box {
     display: flex;
     flex-direction: column;
@@ -13,6 +24,10 @@
     overflow: auto;
 
     grid-gap: 25px;
+
+    @include small-tablet {
+      display: none;
+    }
     .main-box {
       grid-gap: 11px;
     }

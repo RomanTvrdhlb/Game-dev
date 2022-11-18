@@ -9,11 +9,22 @@
     border-radius: 20px;
   }
 
+  &__wrapper {
+    width: 100%;
+    height: 100%;
 
+@include mobile {
+      padding-bottom: 13px;
+    }
+  }
   &__prev {
     top: 6px;
     bottom: 6px;
     left: 0;
+
+@include mobile {
+      bottom: 7px;
+    }
 
     svg {
       transform: scaleX(-1);
@@ -44,22 +55,19 @@
     bottom: 6px;
 
     border-radius: 0 10px 10px 0;
+
+@include mobile {
+      bottom: 7px;
+    }
   }
   &__square {
     position: relative;
 
     width: 100%;
+    height: 100%;
     margin: 6px 5px 6px 0;
 
     filter: drop-shadow(6px 5px 2px rgba(0, 0, 0, 0.25));
-
-    // transition: all 0.4s linear;
-    // &:hover {
-    //   img,
-    //   picture {
-    //     transform: scale(1.08);
-    //   }
-    // }
   }
 
 
@@ -70,10 +78,15 @@
     max-width: 212px;
 
     border-radius: 10px;
+
+@include mobile {
+      width: 64px;
+      height: 67px;
+    }
   }
   &__name {
     position: absolute;
-    bottom: 4px;
+    bottom: 0;
 
     display: flex;
     justify-content: center;
@@ -90,6 +103,13 @@
 
     background: var(--bg-n);
     border-radius: 0 0 10px 10px;
+
+@include mobile {
+      overflow-x: hidden;
+
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
   }
 
 
@@ -101,7 +121,7 @@
     border-radius: 10px;
 
 
-    image,
+    img,
     picture {
       display: block;
       width: 100%;

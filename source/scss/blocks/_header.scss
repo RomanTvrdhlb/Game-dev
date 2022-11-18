@@ -11,6 +11,8 @@ header {
   padding: clamp(19px, 1.779vw, 29px) 0 clamp(16px, 1.718vw, 28px);
 
   &__box {
+    position: relative;
+
     display: grid;
     align-items: center;
 

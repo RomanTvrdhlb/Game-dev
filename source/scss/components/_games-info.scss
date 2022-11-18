@@ -1,15 +1,29 @@
 .games-info {
-  display: flex;
+  display: grid;
   align-items: center;
-  padding: 8px 18px;
+  padding: clamp(6px, 0.491vw, 8px) clamp(10px, 1.104vw, 18px);
 
   background-color: var(--bg-e);
   border-radius: 10px;
 
   grid-gap: clamp(8px, 0.92vw, 15px);
+  grid-template-columns: auto 1fr;
+
+@include small-tablet {
+    align-items: flex-start;
+    max-height: 68px;
+    overflow-y: auto;
+  }
+
   &__img {
     width: 100%;
     max-width: 96px;
+    height: auto;
+
+@include small-tablet {
+      max-width: 56px;
+    }
+
     img,
     picture {
       width: 100%;
@@ -27,7 +41,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 100%;
     font-family: var(--font-family);
     color: var(--color-b);
   }
@@ -35,7 +49,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 10px;
-    line-height: 12px;
+    line-height: 13px;
     font-family: var(--font-family3);
     color: var(--color-b);
   }
