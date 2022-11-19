@@ -68,9 +68,9 @@
     height: fit-content;
   }
   &__btn {
-    position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 1;
 
     padding: clamp(5px, 0.613vw, 10px) clamp(21px, 5.89vw, 97px);
 
@@ -83,18 +83,19 @@
 
     background: var(--bg-a);
     border-radius: 10px;
-    outline: 11px solid var(--color-o);
     transform: translate(-50%, -50%);
 
     transition: all 0.4s linear;
 
     will-change: transform;
 
+@include fakeOutLine(13px, -11px,absolute,var(--bg-a));
+
 @include mobile {
       font-family: var(--font-family);
-      color: var(--color-b);
-
-      border-radius: 39px;
+      &:before {
+        border-radius: 39px;
+      }
     }
 
     &:hover {

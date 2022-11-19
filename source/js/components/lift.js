@@ -1,8 +1,8 @@
 import { addCustomClass,removeCustomClass } from "../functions/customFunctions";
 import vars from '../_vars';
 
- const lift = document.querySelector('[data-lift]');
-// console.log(document.documentElement.scrollTop)
+const {lift} = vars;
+
  if (lift) {
   let timeOut;
 

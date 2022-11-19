@@ -2,19 +2,19 @@
 
 @mixin dfc {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 @mixin dfcs {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 @mixin psevdo {
+  content: "";
   position: absolute;
-  content: '';
 }
 
 @mixin bg_position {
@@ -41,40 +41,60 @@ $browser-context: 16; // Default
   background-image: url("#{$pathToImage}.png");
   /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
   background-image: image-set(
-    /* stylelint-disable-next-line function-comma-newline-after */
-    /*"#{$pathToImage}.avif"type("image/avif"),*/
-    "#{$pathToImage}.webp"type("image/webp"),
-    "#{$pathToImage}.png"type("image/png")
+  /* stylelint-disable-next-line function-comma-newline-after */
+  /*"#{$pathToImage}.avif"type("image/avif"),*/
+  "#{$pathToImage}.webp"type("image/webp"),
+  "#{$pathToImage}.png"type("image/png")
   );
 }
 
 @mixin footerToBottom {
   display: grid;
+  min-height: 100vh;
+
   grid-template-columns: 100%;
   grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
 }
 
 @mixin mr($value) {
-    &:not(:last-child) {
-        margin-right: $value;
-    }
+  &:not(:last-child) {
+    margin-right: $value;
+  }
 }
 
 @mixin ml($value) {
-    &:not(:last-child) {
-        margin-left: $value;
-    }
+  &:not(:last-child) {
+    margin-left: $value;
+  }
 }
 
 @mixin mb($value) {
-    &:not(:last-child) {
-        margin-bottom: $value;
-    }
+  &:not(:last-child) {
+    margin-bottom: $value;
+  }
 }
 
 @mixin mt($value) {
-    &:not(:last-child) {
-        margin-top: $value;
-    }
+  &:not(:last-child) {
+    margin-top: $value;
+  }
+}
+
+@mixin fakeOutLine($radius,$offset,$parentPosition,$bg) {
+  position: $parentPosition;
+  &:before {
+    content: "";
+    position: absolute;
+    top: $offset;
+    right: $offset;
+    bottom: $offset;
+    left: $offset;
+    z-index: -1;
+
+    color: inherit;
+
+    background-color: $bg;
+    border: calc($offset * -1) solid currentColor;
+    border-radius: $radius;
+  }
 }

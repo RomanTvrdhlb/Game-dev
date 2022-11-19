@@ -2,8 +2,11 @@
   min-width: 90px;
   height: 100%;
 
+  color: var(--color-x);
+
   border-radius: 10px;
-  outline: 3px solid var(--color-x);
+
+@include fakeOutLine(10px, -3px,relative,transparent);
 
 @include mobile {
     min-width: 50px;
@@ -11,7 +14,7 @@
   }
 
   &--pink {
-    outline: 3px solid var(--color-s);
+    color: var(--color-s);
   }
   &:hover {
     img,

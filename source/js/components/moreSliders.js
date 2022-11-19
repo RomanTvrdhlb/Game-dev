@@ -1,12 +1,7 @@
 import { removeClassInArray, addCustomClass, removeCustomClass, addClassInArray, toggleCustomClass} from "../functions/customFunctions";
 import vars from "../_vars";
 
-const headerItems = [...document.querySelectorAll('.header-nav__item')];
-  const buttons = [...document.querySelectorAll('.header-nav__btn')];
-  const sliders = [...document.querySelectorAll('.header-slider')];
-  const {overlay} = vars;
-
-
+  const {overlay,headerItems,buttons,sliders} = vars;
 
 if (overlay) {
 

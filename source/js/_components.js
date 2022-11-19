@@ -11,4 +11,5 @@ import './components/getDinamicHeight';
 import './components/tabs';
 import './components/moreSliders';
 import './components/searchBtn';
+import './components/tootlTip';
 

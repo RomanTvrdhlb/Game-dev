@@ -75,9 +75,14 @@
 
   transition: all 0.4s;
 
+  @include tablet {
+    outline: none;
+  }
   @include small-tablet {
     border-radius: 0;
   }
+
+
 
   &:hover {
     outline: solid 5px var(--color-d);
@@ -210,6 +215,37 @@
     &::before,
     &::after {
       display: flex;
+    }
+  }
+}
+
+[data-tooltip-text] {
+  [data-tooltip] {
+    padding: 6px clamp(8px, 1.534vw, 25px);
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(10px, 0.736vw, 12px);
+    line-height: 125%;
+    font-family: var(--font-family);
+    color: var(--color-a);
+
+    background-color: var(--bg-d);
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+
+    transition: all 0.4s;
+
+    @include tablet {
+      display: none !important;
+    }
+  }
+
+  &:hover {
+    [data-tooltip] {
+      visibility: visible;
+      opacity: 1;
     }
   }
 }

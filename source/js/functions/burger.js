@@ -1,45 +1,28 @@
-import { disableScroll } from '../functions/disable-scroll';
-import { enableScroll } from '../functions/enable-scroll';
 import { getHeaderHeight } from '../functions/header-height';
-import _vars from '../_vars';
+import vars from '../_vars';
 
-import {addCustomClass, toggleCustomClass, elementHeight, removeCustomClass, addClassInArray} from '../functions/customFunctions'
+import {toggleCustomClass,removeCustomClass} from '../functions/customFunctions'
 
-let overlay = document.querySelector('[data-overlay]');
-// let mobileMenu = document.querySelector('.mobile-menu');
+const {overlay,burger,mobileMenu} = vars;
 
-const burger = document.querySelector('.burger');
-const mobileMenu = document.querySelector('.mobile-menu');
-
-
-// let burger = document.querySelector('.burger');
-// let burgerActive = document.querySelector('.burger.active');
-// let header = document.querySelector('header');
 
 const mobileMenuHandler = function(overlay, mobileMenu, burger) {
   burger.addEventListener('click', function(){
-    mobileMenu.classList.toggle('active');
-    burger.classList.toggle('active');
-    overlay.classList.toggle('active');
-    overlay.classList.toggle('overlay--mode');
-    toggleCustomClass(_vars.bodyEl, 'fixed')
-    // headerTag.classList.toggle('active');
-    // document.body.classList.toggle('dis-scroll')
+    toggleCustomClass(mobileMenu, 'active');
+    toggleCustomClass(burger, 'active');
+    toggleCustomClass(overlay, 'active');
+    toggleCustomClass(overlay, 'overlay--mode');
+    toggleCustomClass(vars.bodyEl, 'fixed');
     getHeaderHeight();
   })
 }
 
 const hideMenuHandler = function(overlay, mobileMenu, burger) {
-    mobileMenu.classList.remove('active');
-    burger.classList.remove('active');
-    overlay.classList.remove('active');
-    overlay.classList.remove('overlay--mode');
-    removeCustomClass(_vars.bodyEl, 'fixed')
-
-    console.log(_vars.bodyEl)
-
-    // headerTag.classList.remove('active');
-    // document.body.classList.remove('dis-scroll')
+    removeCustomClass(mobileMenu, 'active');
+    removeCustomClass(burger, 'active');
+    removeCustomClass(overlay, 'active');
+    removeCustomClass(overlay, 'overlay--mode');
+    removeCustomClass(vars.bodyEl, 'fixed');
 }
 
 

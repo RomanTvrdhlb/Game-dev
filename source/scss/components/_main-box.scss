@@ -32,8 +32,9 @@
     width: 60px;
     height: 60px;
 
-    border-radius: 10px;
-    outline: solid 3px var(--color-p);
+    color: var(--color-p);
+
+@include fakeOutLine(13px, -3px,relative,transparent);
 
 @include tablet {
       width: 100%;
@@ -41,22 +42,22 @@
     }
 
     &--blue {
-      outline: solid 3px var(--color-w);
+      color: var(--color-w);
     }
     &--pink {
-      outline: solid 3px var(--color-t);
+      color: var(--color-t);
     }
     &--orange {
-      outline: solid 3px var(--color-i);
+      color: var(--color-i);
     }
     &--yellow {
-      outline: solid 3px var(--color-g);
+      color: var(--color-g);
     }
     &--red {
-      outline: solid 3px var(--color-l);
+      color: var(--color-l);
     }
     &--mode {
-      outline: solid 3px var(--color-m);
+      color: var(--color-m);
     }
   }
   &__img {
