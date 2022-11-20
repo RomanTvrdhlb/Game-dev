@@ -1,11 +1,17 @@
-import { removeClassInArray, addCustomClass, removeCustomClass, addClassInArray, toggleCustomClass} from "../functions/customFunctions";
+import { toggleCustomClass} from "../functions/customFunctions";
+import { hideMenuHandler } from "../functions/burger";
 import vars from '../_vars';
 
-const {btn,searchForm} = vars;
+
+const {btn,searchForm,overlay,mobileMenu,burger} = vars;
+const showSearchForm = function(button,hideBlock){
+     toggleCustomClass(button, 'active');
+     toggleCustomClass(hideBlock, 'active');
+}
 
 if (btn) {
     btn.addEventListener('click', function(e){
-     toggleCustomClass(btn, 'active')
-     toggleCustomClass(searchForm, 'active')
+        showSearchForm(btn,searchForm);
+        hideMenuHandler(overlay,mobileMenu,burger);
     });
 }

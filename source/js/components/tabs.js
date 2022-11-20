@@ -1,4 +1,4 @@
-import { removeClassInArray, addCustomClass, addClassInArray, toggleCustomClass} from "../functions/customFunctions";
+import { removeClassInArray, addCustomClass, addClassInArray} from "../functions/customFunctions";
 
 const tabParents = [...document.querySelectorAll('[data-tabs-parrent]')];
 tabParents.map((tabParent) => {

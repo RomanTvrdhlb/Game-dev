@@ -1,12 +1,7 @@
-import {addCustomClass, removeCustomClass} from '../functions/customFunctions';
-
 let mobileParrent = document.querySelector('.mobile-nav');
 let desktopParrent = document.querySelector('.header-nav');
 let breakpoint = 1024;
 const currentElements = [...document.querySelectorAll('.header-nav__item')];
-
-// const currentItem = currentElements.map(function(item){ return item})
-// console.log(currentItem)
 
 const replaceElements = (elements, parentDesktop, parentMobile) => {
   let containerWidth = document.documentElement.clientWidth;

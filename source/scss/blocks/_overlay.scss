@@ -8,13 +8,16 @@
 
   overflow-y: scroll !important;
 
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
   visibility: hidden;
   opacity: 0;
 
   transition: opacity 0.4s;
+
   &--mode {
     top: var(--header-height);
+
+    background-color: rgba(0, 0, 0, 0.5);
   }
   &.active {
     visibility: visible;

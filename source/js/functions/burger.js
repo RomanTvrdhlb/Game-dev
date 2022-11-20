@@ -3,7 +3,7 @@ import vars from '../_vars';
 
 import {toggleCustomClass,removeCustomClass} from '../functions/customFunctions'
 
-const {overlay,burger,mobileMenu} = vars;
+const {overlay,burger,mobileMenu,btn,searchForm} = vars;
 
 
 const mobileMenuHandler = function(overlay, mobileMenu, burger) {
@@ -13,11 +13,13 @@ const mobileMenuHandler = function(overlay, mobileMenu, burger) {
     toggleCustomClass(overlay, 'active');
     toggleCustomClass(overlay, 'overlay--mode');
     toggleCustomClass(vars.bodyEl, 'fixed');
+    removeCustomClass(btn, 'active')
+    removeCustomClass(searchForm, 'active')
     getHeaderHeight();
   })
 }
 
-const hideMenuHandler = function(overlay, mobileMenu, burger) {
+export const hideMenuHandler = function(overlay, mobileMenu, burger) {
     removeCustomClass(mobileMenu, 'active');
     removeCustomClass(burger, 'active');
     removeCustomClass(overlay, 'active');
