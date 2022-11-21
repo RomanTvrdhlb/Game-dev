@@ -25,6 +25,17 @@
     }
   }
 
+  @keyframes swipeTop {
+    from {
+      transform: translateY(8px);
+      opacity: 0.8;
+    }
+
+    to {
+      transform: translateY(0);
+      opacity: 0.8;
+    }
+  }
   &__box {
     position: relative;
 
@@ -37,6 +48,9 @@
     grid-gap: 25px;
 
 @include laptop {
+      &:after {
+        top: 6% !important;
+      }
       .main-box__inner {
         grid-template-columns: repeat(3, 1fr);
       }
@@ -74,6 +88,26 @@
         &__title {
           width: initial;
         }
+      }
+    }
+
+@include for-small-tablet {
+      &:after {
+        content: "";
+        position: absolute;
+        top: 1%;
+        right: 0;
+        z-index: 30;
+
+        width: 40px;
+        height: 40px;
+
+        background-image: url(/img/sprite/slide-top-bottom-icon.svg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        opacity: 0;
+
+        animation: swipeTop 1s 16 alternate !important;
       }
     }
 
