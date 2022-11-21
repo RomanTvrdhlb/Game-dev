@@ -1,4 +1,6 @@
 .main-game {
+  position: relative;
+
   display: grid;
   padding-top: 16px;
   overflow: hidden;
@@ -11,6 +13,18 @@
     padding: 0 var(--container-offset);
 
     grid-template-columns: 100%;
+  }
+
+@include small-tablet {
+    &:before {
+      animation: swipe 3s 8 alternate !important;
+    }
+  }
+
+@include mobile {
+    &:before {
+      left: 75% !important;
+    }
   }
 
   @keyframes swipe {
@@ -36,6 +50,24 @@
       opacity: 0.8;
     }
   }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 190px;
+    left: 88%;
+    z-index: 30;
+
+    width: 32px;
+    height: 32px;
+
+    background-image: url(/img/sprite/slide-left-right-icon.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    opacity: 0;
+
+    pointer-events: none;
+  }
+
   &__box {
     position: relative;
 
@@ -61,9 +93,7 @@
       width: calc(100% + (var(--container-offset) * 2));
       margin: 0 calc(var(--container-offset) * -1);
       padding: 0 var(--container-offset);
-      &:before {
-        animation: swipe 3s 8 alternate !important;
-      }
+
       .main-box {
         padding: 5px 0;
         &__inner {
@@ -119,21 +149,7 @@
     }
 
 
-    &:before {
-      content: "";
-      position: absolute;
-      top: 4%;
-      left: 85%;
-      z-index: 30;
 
-      width: 32px;
-      height: 32px;
-
-      background-image: url(/img/sprite/slide-left-right-icon.svg);
-      background-repeat: no-repeat;
-      background-size: auto;
-      opacity: 0;
-    }
 
     .main-box {
       grid-gap: 11px;

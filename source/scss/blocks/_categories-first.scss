@@ -1,4 +1,32 @@
 .categories-first {
   padding-top: var(--header-height);
   padding-bottom: clamp(9px, 1.104vw, 18px);
+
+  &__box {
+    position: relative;
+
+@include mobile {
+      &:before {
+        animation: swipe 3s 8 alternate !important;
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 60px;
+      right: 10%;
+      z-index: 30;
+
+      width: 32px;
+      height: 32px;
+
+      background-image: url(/img/sprite/slide-left-right-icon.svg);
+      background-repeat: no-repeat;
+      background-size: auto;
+      opacity: 0;
+
+      pointer-events: none;
+    }
+  }
 }
